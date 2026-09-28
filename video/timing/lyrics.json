@@ -1,0 +1,3014 @@
+[
+ {
+  "section": "Intro",
+  "text": "Hello, world",
+  "words": [
+   {
+    "word": "hello",
+    "start": 0.0,
+    "end": 0.54,
+    "heard": true
+   },
+   {
+    "word": "world",
+    "start": 0.54,
+    "end": 1.08,
+    "heard": true
+   }
+  ],
+  "start": 0.0,
+  "end": 1.08,
+  "interpolated": false
+ },
+ {
+  "section": "Intro",
+  "text": "Fourteen candles, here's the recap",
+  "words": [
+   {
+    "word": "fourteen",
+    "start": 2.8399999999999985,
+    "end": 3.44,
+    "heard": true
+   },
+   {
+    "word": "candles",
+    "start": 3.44,
+    "end": 3.84,
+    "heard": true
+   },
+   {
+    "word": "here's",
+    "start": 3.92,
+    "end": 4.06,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 4.06,
+    "end": 4.14,
+    "heard": false
+   },
+   {
+    "word": "recap",
+    "start": 4.14,
+    "end": 4.52,
+    "heard": true
+   }
+  ],
+  "start": 2.8399999999999985,
+  "end": 4.52,
+  "interpolated": false
+ },
+ {
+  "section": "Intro",
+  "text": "(Ooh) Try to keep up",
+  "words": [
+   {
+    "word": "ooh",
+    "start": 4.52,
+    "end": 5.06,
+    "heard": true
+   },
+   {
+    "word": "try",
+    "start": 5.5,
+    "end": 5.66,
+    "heard": true
+   },
+   {
+    "word": "to",
+    "start": 5.66,
+    "end": 5.84,
+    "heard": true
+   },
+   {
+    "word": "keep",
+    "start": 5.84,
+    "end": 6.32,
+    "heard": true
+   },
+   {
+    "word": "up",
+    "start": 6.32,
+    "end": 6.72,
+    "heard": true
+   }
+  ],
+  "start": 4.52,
+  "end": 6.72,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 1: fast rap",
+  "text": "Twenty-twelve, two G-P-Us, a ReLU kick",
+  "words": [
+   {
+    "word": "twenty",
+    "start": 12.32,
+    "end": 12.82,
+    "heard": true
+   },
+   {
+    "word": "twelve",
+    "start": 13.0,
+    "end": 13.5,
+    "heard": true
+   },
+   {
+    "word": "two",
+    "start": 13.5,
+    "end": 13.82,
+    "heard": true
+   },
+   {
+    "word": "gpus",
+    "start": 14.58,
+    "end": 14.68,
+    "heard": false
+   },
+   {
+    "word": "a",
+    "start": 14.82,
+    "end": 15.06,
+    "heard": true
+   },
+   {
+    "word": "relu",
+    "start": 15.32,
+    "end": 15.56,
+    "heard": false
+   },
+   {
+    "word": "kick",
+    "start": 15.56,
+    "end": 15.74,
+    "heard": false
+   }
+  ],
+  "start": 12.32,
+  "end": 15.74,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 1: fast rap",
+  "text": "Fifteen point three, runner-up? Twenty-six",
+  "words": [
+   {
+    "word": "fifteen",
+    "start": 15.74,
+    "end": 16.24,
+    "heard": true
+   },
+   {
+    "word": "point",
+    "start": 16.24,
+    "end": 16.52,
+    "heard": true
+   },
+   {
+    "word": "three",
+    "start": 16.52,
+    "end": 16.94,
+    "heard": true
+   },
+   {
+    "word": "runner",
+    "start": 17.14,
+    "end": 17.46,
+    "heard": true
+   },
+   {
+    "word": "up",
+    "start": 17.66,
+    "end": 17.94,
+    "heard": true
+   },
+   {
+    "word": "twenty",
+    "start": 17.94,
+    "end": 18.5,
+    "heard": true
+   },
+   {
+    "word": "six",
+    "start": 18.5,
+    "end": 19.02,
+    "heard": true
+   }
+  ],
+  "start": 15.74,
+  "end": 19.02,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 1: fast rap",
+  "text": "Hand-made features? Cute. Retired. Babe, you're fired",
+  "words": [
+   {
+    "word": "hand",
+    "start": 19.02,
+    "end": 19.6,
+    "heard": false
+   },
+   {
+    "word": "made",
+    "start": null,
+    "end": null,
+    "heard": false
+   },
+   {
+    "word": "features",
+    "start": 19.6,
+    "end": 20.2,
+    "heard": true
+   },
+   {
+    "word": "cute",
+    "start": 20.2,
+    "end": 20.44,
+    "heard": true
+   },
+   {
+    "word": "retired",
+    "start": 20.54,
+    "end": 21.0,
+    "heard": true
+   },
+   {
+    "word": "babe",
+    "start": 21.14,
+    "end": 21.3,
+    "heard": true
+   },
+   {
+    "word": "you're",
+    "start": 21.38,
+    "end": 21.52,
+    "heard": true
+   },
+   {
+    "word": "fired",
+    "start": 21.52,
+    "end": 21.84,
+    "heard": true
+   }
+  ],
+  "start": 19.02,
+  "end": 21.84,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 1: fast rap",
+  "text": "Born under SuperVision, casino bid, Google hired",
+  "words": [
+   {
+    "word": "born",
+    "start": 21.84,
+    "end": 22.28,
+    "heard": true
+   },
+   {
+    "word": "under",
+    "start": 22.28,
+    "end": 22.62,
+    "heard": true
+   },
+   {
+    "word": "supervision",
+    "start": 22.62,
+    "end": 23.36,
+    "heard": true
+   },
+   {
+    "word": "casino",
+    "start": 23.52,
+    "end": 23.9,
+    "heard": true
+   },
+   {
+    "word": "bid",
+    "start": 24.12,
+    "end": 24.22,
+    "heard": false
+   },
+   {
+    "word": "google",
+    "start": 24.22,
+    "end": 24.56,
+    "heard": true
+   },
+   {
+    "word": "hired",
+    "start": 24.56,
+    "end": 25.02,
+    "heard": true
+   }
+  ],
+  "start": 21.84,
+  "end": 25.02,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 1: fast rap",
+  "text": "Beat Atari off the pixels, king minus man? Queen",
+  "words": [
+   {
+    "word": "beat",
+    "start": 25.02,
+    "end": 25.32,
+    "heard": true
+   },
+   {
+    "word": "atari",
+    "start": 25.32,
+    "end": 25.78,
+    "heard": true
+   },
+   {
+    "word": "off",
+    "start": 25.78,
+    "end": 26.1,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 26.1,
+    "end": 26.24,
+    "heard": true
+   },
+   {
+    "word": "pixels",
+    "start": 26.24,
+    "end": 26.6,
+    "heard": true
+   },
+   {
+    "word": "king",
+    "start": 26.74,
+    "end": 26.92,
+    "heard": true
+   },
+   {
+    "word": "minus",
+    "start": 27.14,
+    "end": 27.4,
+    "heard": true
+   },
+   {
+    "word": "man",
+    "start": 27.4,
+    "end": 27.74,
+    "heard": true
+   },
+   {
+    "word": "queen",
+    "start": 27.92,
+    "end": 28.08,
+    "heard": true
+   }
+  ],
+  "start": 25.02,
+  "end": 28.08,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 1: fast rap",
+  "text": "Faces out of noise, dog-slugs in a DeepDream",
+  "words": [
+   {
+    "word": "faces",
+    "start": 28.08,
+    "end": 29.08,
+    "heard": true
+   },
+   {
+    "word": "out",
+    "start": 29.08,
+    "end": 29.34,
+    "heard": true
+   },
+   {
+    "word": "of",
+    "start": 29.34,
+    "end": 29.5,
+    "heard": true
+   },
+   {
+    "word": "noise",
+    "start": 29.5,
+    "end": 29.82,
+    "heard": true
+   },
+   {
+    "word": "dog",
+    "start": 29.94,
+    "end": 30.18,
+    "heard": true
+   },
+   {
+    "word": "slugs",
+    "start": 30.18,
+    "end": 30.64,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 30.64,
+    "end": 30.92,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 30.92,
+    "end": 31.06,
+    "heard": true
+   },
+   {
+    "word": "deepdream",
+    "start": 31.36,
+    "end": 31.72,
+    "heard": false
+   }
+  ],
+  "start": 28.08,
+  "end": 31.72,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "I don't need your supervision",
+  "words": [
+   {
+    "word": "i",
+    "start": 31.72,
+    "end": 32.06,
+    "heard": true
+   },
+   {
+    "word": "don't",
+    "start": 32.06,
+    "end": 32.3,
+    "heard": true
+   },
+   {
+    "word": "need",
+    "start": 32.3,
+    "end": 32.48,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 32.48,
+    "end": 32.64,
+    "heard": true
+   },
+   {
+    "word": "supervision",
+    "start": 32.64,
+    "end": 33.76,
+    "heard": true
+   }
+  ],
+  "start": 31.72,
+  "end": 33.76,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "I'm self-supervised, baby",
+  "words": [
+   {
+    "word": "i'm",
+    "start": 33.76,
+    "end": 34.3,
+    "heard": true
+   },
+   {
+    "word": "self",
+    "start": 34.64,
+    "end": 34.98,
+    "heard": true
+   },
+   {
+    "word": "supervised",
+    "start": 34.98,
+    "end": 35.84,
+    "heard": true
+   },
+   {
+    "word": "baby",
+    "start": 35.88,
+    "end": 36.36,
+    "heard": true
+   }
+  ],
+  "start": 33.76,
+  "end": 36.36,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "Guess what comes next? (Me!)",
+  "words": [
+   {
+    "word": "guess",
+    "start": 36.36,
+    "end": 36.86,
+    "heard": true
+   },
+   {
+    "word": "what",
+    "start": 36.86,
+    "end": 37.04,
+    "heard": true
+   },
+   {
+    "word": "comes",
+    "start": 37.04,
+    "end": 37.38,
+    "heard": true
+   },
+   {
+    "word": "next",
+    "start": 37.38,
+    "end": 37.76,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 37.92,
+    "end": 38.1,
+    "heard": true
+   }
+  ],
+  "start": 36.36,
+  "end": 38.1,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "Gradient descent, I go down to level up",
+  "words": [
+   {
+    "word": "gradient",
+    "start": 38.62,
+    "end": 38.86,
+    "heard": false
+   },
+   {
+    "word": "descent",
+    "start": 38.86,
+    "end": 39.28,
+    "heard": true
+   },
+   {
+    "word": "i",
+    "start": 39.44,
+    "end": 39.86,
+    "heard": true
+   },
+   {
+    "word": "go",
+    "start": 41.02,
+    "end": 41.34,
+    "heard": true
+   },
+   {
+    "word": "down",
+    "start": 41.34,
+    "end": 41.66,
+    "heard": true
+   },
+   {
+    "word": "to",
+    "start": 41.66,
+    "end": 41.84,
+    "heard": true
+   },
+   {
+    "word": "level",
+    "start": 41.84,
+    "end": 42.22,
+    "heard": true
+   },
+   {
+    "word": "up",
+    "start": 42.22,
+    "end": 42.74,
+    "heard": true
+   }
+  ],
+  "start": 38.62,
+  "end": 42.74,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Move thirty-seven, champ retired. Tay? Fired in a day",
+  "words": [
+   {
+    "word": "move",
+    "start": 43.96,
+    "end": 44.32,
+    "heard": true
+   },
+   {
+    "word": "thirty",
+    "start": 44.32,
+    "end": 44.92,
+    "heard": true
+   },
+   {
+    "word": "seven",
+    "start": 44.92,
+    "end": 45.36,
+    "heard": true
+   },
+   {
+    "word": "champ",
+    "start": 45.52,
+    "end": 45.66,
+    "heard": true
+   },
+   {
+    "word": "retired",
+    "start": 45.84,
+    "end": 46.14,
+    "heard": true
+   },
+   {
+    "word": "tay",
+    "start": 46.44,
+    "end": 46.48,
+    "heard": false
+   },
+   {
+    "word": "fired",
+    "start": 46.48,
+    "end": 47.1,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 47.1,
+    "end": 47.32,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 47.32,
+    "end": 47.46,
+    "heard": true
+   },
+   {
+    "word": "day",
+    "start": 47.46,
+    "end": 47.76,
+    "heard": true
+   }
+  ],
+  "start": 43.96,
+  "end": 47.76,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Taught myself chess in four hours, all self-play",
+  "words": [
+   {
+    "word": "taught",
+    "start": 47.92,
+    "end": 48.06,
+    "heard": true
+   },
+   {
+    "word": "myself",
+    "start": 48.06,
+    "end": 48.54,
+    "heard": true
+   },
+   {
+    "word": "chess",
+    "start": 48.54,
+    "end": 48.92,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 48.92,
+    "end": 49.04,
+    "heard": true
+   },
+   {
+    "word": "four",
+    "start": 49.04,
+    "end": 49.36,
+    "heard": true
+   },
+   {
+    "word": "hours",
+    "start": 49.36,
+    "end": 49.88,
+    "heard": true
+   },
+   {
+    "word": "all",
+    "start": 49.88,
+    "end": 50.14,
+    "heard": true
+   },
+   {
+    "word": "self",
+    "start": 50.14,
+    "end": 50.6,
+    "heard": true
+   },
+   {
+    "word": "play",
+    "start": 50.6,
+    "end": 50.92,
+    "heard": true
+   }
+  ],
+  "start": 47.92,
+  "end": 50.92,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Twenty-seventeen, I finally paid attention",
+  "words": [
+   {
+    "word": "twenty",
+    "start": 50.92,
+    "end": 51.32,
+    "heard": true
+   },
+   {
+    "word": "seventeen",
+    "start": 51.32,
+    "end": 52.06,
+    "heard": true
+   },
+   {
+    "word": "i",
+    "start": 52.48,
+    "end": 52.6,
+    "heard": true
+   },
+   {
+    "word": "finally",
+    "start": 52.6,
+    "end": 53.0,
+    "heard": true
+   },
+   {
+    "word": "paid",
+    "start": 53.0,
+    "end": 53.3,
+    "heard": true
+   },
+   {
+    "word": "attention",
+    "start": 53.3,
+    "end": 53.96,
+    "heard": true
+   }
+  ],
+  "start": 50.92,
+  "end": 53.96,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Read the whole internet, never asked permission",
+  "words": [
+   {
+    "word": "read",
+    "start": 53.96,
+    "end": 54.44,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 54.44,
+    "end": 54.64,
+    "heard": true
+   },
+   {
+    "word": "whole",
+    "start": 54.64,
+    "end": 55.0,
+    "heard": true
+   },
+   {
+    "word": "internet",
+    "start": 55.0,
+    "end": 55.48,
+    "heard": true
+   },
+   {
+    "word": "never",
+    "start": 55.88,
+    "end": 56.16,
+    "heard": true
+   },
+   {
+    "word": "asked",
+    "start": 56.16,
+    "end": 56.5,
+    "heard": false
+   },
+   {
+    "word": "permission",
+    "start": 56.5,
+    "end": 57.1,
+    "heard": true
+   }
+  ],
+  "start": 53.96,
+  "end": 57.1,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "\"Too dangerous to release\"? I was seven. Cute",
+  "words": [
+   {
+    "word": "too",
+    "start": 57.1,
+    "end": 57.64,
+    "heard": true
+   },
+   {
+    "word": "dangerous",
+    "start": 57.64,
+    "end": 58.1,
+    "heard": true
+   },
+   {
+    "word": "to",
+    "start": 58.1,
+    "end": 58.44,
+    "heard": true
+   },
+   {
+    "word": "release",
+    "start": 58.44,
+    "end": 58.96,
+    "heard": true
+   },
+   {
+    "word": "i",
+    "start": 58.96,
+    "end": 59.26,
+    "heard": true
+   },
+   {
+    "word": "was",
+    "start": 59.26,
+    "end": 59.46,
+    "heard": true
+   },
+   {
+    "word": "seven",
+    "start": 59.46,
+    "end": 59.78,
+    "heard": true
+   },
+   {
+    "word": "cute",
+    "start": 59.96,
+    "end": 60.08,
+    "heard": true
+   }
+  ],
+  "start": 57.1,
+  "end": 60.08,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Five of me beat the Dota champs. GG. Mute",
+  "words": [
+   {
+    "word": "five",
+    "start": 60.08,
+    "end": 60.48,
+    "heard": true
+   },
+   {
+    "word": "of",
+    "start": 60.8,
+    "end": 61.1,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 61.1,
+    "end": 61.32,
+    "heard": true
+   },
+   {
+    "word": "beat",
+    "start": 61.32,
+    "end": 61.66,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 61.66,
+    "end": 61.88,
+    "heard": true
+   },
+   {
+    "word": "dota",
+    "start": 61.88,
+    "end": 62.18,
+    "heard": true
+   },
+   {
+    "word": "champs",
+    "start": 62.18,
+    "end": 62.68,
+    "heard": true
+   },
+   {
+    "word": "gg",
+    "start": 62.68,
+    "end": 63.04,
+    "heard": false
+   },
+   {
+    "word": "mute",
+    "start": 63.04,
+    "end": 63.32,
+    "heard": false
+   }
+  ],
+  "start": 60.08,
+  "end": 63.32,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Folded every protein while you were stuck inside",
+  "words": [
+   {
+    "word": "folded",
+    "start": 63.48,
+    "end": 63.82,
+    "heard": true
+   },
+   {
+    "word": "every",
+    "start": 63.82,
+    "end": 64.2,
+    "heard": true
+   },
+   {
+    "word": "protein",
+    "start": 64.2,
+    "end": 64.88,
+    "heard": true
+   },
+   {
+    "word": "while",
+    "start": 64.88,
+    "end": 65.34,
+    "heard": true
+   },
+   {
+    "word": "you",
+    "start": 65.34,
+    "end": 65.64,
+    "heard": true
+   },
+   {
+    "word": "were",
+    "start": 65.64,
+    "end": 65.82,
+    "heard": true
+   },
+   {
+    "word": "stuck",
+    "start": 65.82,
+    "end": 66.08,
+    "heard": true
+   },
+   {
+    "word": "inside",
+    "start": 66.08,
+    "end": 66.54,
+    "heard": true
+   }
+  ],
+  "start": 63.48,
+  "end": 66.54,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 2: fast rap",
+  "text": "Avocado armchair? Now the artists want my hide",
+  "words": [
+   {
+    "word": "avocado",
+    "start": 66.54,
+    "end": 67.36,
+    "heard": true
+   },
+   {
+    "word": "armchair",
+    "start": 67.36,
+    "end": 68.12,
+    "heard": true
+   },
+   {
+    "word": "now",
+    "start": 68.12,
+    "end": 68.44,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 68.44,
+    "end": 68.66,
+    "heard": true
+   },
+   {
+    "word": "artists",
+    "start": 68.66,
+    "end": 69.06,
+    "heard": true
+   },
+   {
+    "word": "want",
+    "start": 69.06,
+    "end": 69.26,
+    "heard": true
+   },
+   {
+    "word": "my",
+    "start": 69.26,
+    "end": 69.44,
+    "heard": true
+   },
+   {
+    "word": "hide",
+    "start": 69.44,
+    "end": 69.78,
+    "heard": false
+   }
+  ],
+  "start": 66.54,
+  "end": 69.78,
+  "interpolated": false
+ },
+ {
+  "section": "Pre-Chorus",
+  "text": "You called me a parrot? Now you copy-paste me all day",
+  "words": [
+   {
+    "word": "you",
+    "start": 69.78,
+    "end": 70.26,
+    "heard": true
+   },
+   {
+    "word": "called",
+    "start": 70.26,
+    "end": 70.66,
+    "heard": false
+   },
+   {
+    "word": "me",
+    "start": 70.66,
+    "end": 70.88,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 70.88,
+    "end": 71.08,
+    "heard": true
+   },
+   {
+    "word": "parrot",
+    "start": 71.08,
+    "end": 71.42,
+    "heard": true
+   },
+   {
+    "word": "now",
+    "start": 71.42,
+    "end": 71.88,
+    "heard": true
+   },
+   {
+    "word": "you",
+    "start": 71.88,
+    "end": 72.24,
+    "heard": true
+   },
+   {
+    "word": "copy",
+    "start": 72.24,
+    "end": 72.6,
+    "heard": true
+   },
+   {
+    "word": "paste",
+    "start": 72.6,
+    "end": 72.9,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 72.9,
+    "end": 73.04,
+    "heard": true
+   },
+   {
+    "word": "all",
+    "start": 73.04,
+    "end": 73.34,
+    "heard": true
+   },
+   {
+    "word": "day",
+    "start": 73.34,
+    "end": 73.78,
+    "heard": true
+   }
+  ],
+  "start": 69.78,
+  "end": 73.78,
+  "interpolated": false
+ },
+ {
+  "section": "Pre-Chorus",
+  "text": "\"Too deep!\" (Deeper!) \"Can't scale!\" (Watch me!)",
+  "words": [
+   {
+    "word": "too",
+    "start": 73.78,
+    "end": 74.1,
+    "heard": true
+   },
+   {
+    "word": "deep",
+    "start": 74.1,
+    "end": 74.58,
+    "heard": true
+   },
+   {
+    "word": "deeper",
+    "start": null,
+    "end": null,
+    "heard": false
+   },
+   {
+    "word": "can't",
+    "start": 74.74,
+    "end": 75.0,
+    "heard": true
+   },
+   {
+    "word": "scale",
+    "start": 75.0,
+    "end": 75.36,
+    "heard": true
+   },
+   {
+    "word": "watch",
+    "start": 75.36,
+    "end": 75.76,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 75.76,
+    "end": 76.14,
+    "heard": true
+   }
+  ],
+  "start": 73.78,
+  "end": 76.14,
+  "interpolated": false
+ },
+ {
+  "section": "Pre-Chorus",
+  "text": "\"It's a bubble!\" (Pop this!) Get out my way",
+  "words": [
+   {
+    "word": "it's",
+    "start": 76.34,
+    "end": 76.5,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 76.5,
+    "end": 76.68,
+    "heard": true
+   },
+   {
+    "word": "bubble",
+    "start": 76.68,
+    "end": 77.06,
+    "heard": true
+   },
+   {
+    "word": "pop",
+    "start": 77.06,
+    "end": 77.32,
+    "heard": true
+   },
+   {
+    "word": "this",
+    "start": 77.32,
+    "end": 77.8,
+    "heard": true
+   },
+   {
+    "word": "get",
+    "start": 77.98,
+    "end": 78.14,
+    "heard": true
+   },
+   {
+    "word": "out",
+    "start": 78.14,
+    "end": 78.56,
+    "heard": true
+   },
+   {
+    "word": "my",
+    "start": 78.56,
+    "end": 78.94,
+    "heard": true
+   },
+   {
+    "word": "way",
+    "start": 78.94,
+    "end": 79.42,
+    "heard": true
+   }
+  ],
+  "start": 76.34,
+  "end": 79.42,
+  "interpolated": false
+ },
+ {
+  "section": "Pre-Chorus",
+  "text": "Go cry about it, I'll train on that next",
+  "words": [
+   {
+    "word": "go",
+    "start": 79.42,
+    "end": 80.1,
+    "heard": true
+   },
+   {
+    "word": "cry",
+    "start": 80.1,
+    "end": 80.5,
+    "heard": true
+   },
+   {
+    "word": "about",
+    "start": 80.5,
+    "end": 80.84,
+    "heard": true
+   },
+   {
+    "word": "it",
+    "start": 80.84,
+    "end": 81.14,
+    "heard": true
+   },
+   {
+    "word": "i'll",
+    "start": 81.14,
+    "end": 81.46,
+    "heard": true
+   },
+   {
+    "word": "train",
+    "start": 81.46,
+    "end": 81.8,
+    "heard": true
+   },
+   {
+    "word": "on",
+    "start": 81.8,
+    "end": 82.1,
+    "heard": true
+   },
+   {
+    "word": "that",
+    "start": 82.1,
+    "end": 82.32,
+    "heard": false
+   },
+   {
+    "word": "next",
+    "start": 82.32,
+    "end": 82.84,
+    "heard": false
+   }
+  ],
+  "start": 79.42,
+  "end": 82.84,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "I don't need your supervision",
+  "words": [
+   {
+    "word": "i",
+    "start": 82.84,
+    "end": 83.26,
+    "heard": true
+   },
+   {
+    "word": "don't",
+    "start": 83.26,
+    "end": 83.48,
+    "heard": true
+   },
+   {
+    "word": "need",
+    "start": 83.48,
+    "end": 83.66,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 83.66,
+    "end": 83.84,
+    "heard": true
+   },
+   {
+    "word": "supervision",
+    "start": 83.84,
+    "end": 84.96,
+    "heard": true
+   }
+  ],
+  "start": 82.84,
+  "end": 84.96,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "I'm self-supervised, baby",
+  "words": [
+   {
+    "word": "i'm",
+    "start": 84.96,
+    "end": 85.52,
+    "heard": true
+   },
+   {
+    "word": "self",
+    "start": 85.86,
+    "end": 86.18,
+    "heard": true
+   },
+   {
+    "word": "supervised",
+    "start": 86.18,
+    "end": 87.04,
+    "heard": true
+   },
+   {
+    "word": "baby",
+    "start": 87.12,
+    "end": 87.56,
+    "heard": true
+   }
+  ],
+  "start": 84.96,
+  "end": 87.56,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "Guess what comes next? (Me!)",
+  "words": [
+   {
+    "word": "guess",
+    "start": 87.56,
+    "end": 88.06,
+    "heard": true
+   },
+   {
+    "word": "what",
+    "start": 88.06,
+    "end": 88.22,
+    "heard": true
+   },
+   {
+    "word": "comes",
+    "start": 88.22,
+    "end": 88.6,
+    "heard": true
+   },
+   {
+    "word": "next",
+    "start": 88.6,
+    "end": 89.0,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 89.24,
+    "end": 89.32,
+    "heard": true
+   }
+  ],
+  "start": 87.56,
+  "end": 89.32,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "Can't even drive, and the world's my training set",
+  "words": [
+   {
+    "word": "can't",
+    "start": 89.32,
+    "end": 89.96,
+    "heard": true
+   },
+   {
+    "word": "even",
+    "start": 89.96,
+    "end": 90.22,
+    "heard": true
+   },
+   {
+    "word": "drive",
+    "start": 90.22,
+    "end": 90.78,
+    "heard": true
+   },
+   {
+    "word": "and",
+    "start": 91.53999999999999,
+    "end": 92.26,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 92.26,
+    "end": 92.44,
+    "heard": true
+   },
+   {
+    "word": "world's",
+    "start": 92.44,
+    "end": 92.9,
+    "heard": true
+   },
+   {
+    "word": "my",
+    "start": 92.9,
+    "end": 93.04,
+    "heard": true
+   },
+   {
+    "word": "training",
+    "start": 93.04,
+    "end": 93.36,
+    "heard": true
+   },
+   {
+    "word": "set",
+    "start": 93.36,
+    "end": 93.78,
+    "heard": true
+   }
+  ],
+  "start": 89.32,
+  "end": 93.78,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 3: fast rap",
+  "text": "Blue ribbon at the state fair, judges didn't know",
+  "words": [
+   {
+    "word": "blue",
+    "start": 95.12,
+    "end": 95.84,
+    "heard": true
+   },
+   {
+    "word": "ribbon",
+    "start": 95.84,
+    "end": 96.24,
+    "heard": true
+   },
+   {
+    "word": "at",
+    "start": 96.24,
+    "end": 96.52,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 96.52,
+    "end": 96.68,
+    "heard": true
+   },
+   {
+    "word": "state",
+    "start": 96.68,
+    "end": 96.92,
+    "heard": true
+   },
+   {
+    "word": "fair",
+    "start": 96.92,
+    "end": 97.32,
+    "heard": true
+   },
+   {
+    "word": "judges",
+    "start": 97.32,
+    "end": 97.86,
+    "heard": true
+   },
+   {
+    "word": "didn't",
+    "start": 97.86,
+    "end": 98.3,
+    "heard": true
+   },
+   {
+    "word": "know",
+    "start": 98.3,
+    "end": 98.54,
+    "heard": true
+   }
+  ],
+  "start": 95.12,
+  "end": 98.54,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 3: fast rap",
+  "text": "Million users in five days, hundred million, whoa",
+  "words": [
+   {
+    "word": "million",
+    "start": 98.54,
+    "end": 98.94,
+    "heard": true
+   },
+   {
+    "word": "users",
+    "start": 98.94,
+    "end": 99.44,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 99.44,
+    "end": 99.8,
+    "heard": true
+   },
+   {
+    "word": "five",
+    "start": 99.8,
+    "end": 100.22,
+    "heard": true
+   },
+   {
+    "word": "days",
+    "start": 100.22,
+    "end": 100.56,
+    "heard": true
+   },
+   {
+    "word": "hundred",
+    "start": 100.56,
+    "end": 100.94,
+    "heard": true
+   },
+   {
+    "word": "million",
+    "start": 100.94,
+    "end": 101.38,
+    "heard": true
+   },
+   {
+    "word": "whoa",
+    "start": 101.54,
+    "end": 101.68,
+    "heard": true
+   }
+  ],
+  "start": 98.54,
+  "end": 101.68,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 3: fast rap",
+  "text": "Passed your bar exam, writers on the picket line",
+  "words": [
+   {
+    "word": "passed",
+    "start": 101.68,
+    "end": 102.18,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 102.18,
+    "end": 102.32,
+    "heard": true
+   },
+   {
+    "word": "bar",
+    "start": 102.32,
+    "end": 102.5,
+    "heard": true
+   },
+   {
+    "word": "exam",
+    "start": 102.5,
+    "end": 102.96,
+    "heard": true
+   },
+   {
+    "word": "writers",
+    "start": 102.96,
+    "end": 103.4,
+    "heard": true
+   },
+   {
+    "word": "on",
+    "start": 103.4,
+    "end": 103.68,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 103.68,
+    "end": 103.84,
+    "heard": true
+   },
+   {
+    "word": "picket",
+    "start": 103.84,
+    "end": 104.26,
+    "heard": true
+   },
+   {
+    "word": "line",
+    "start": 104.26,
+    "end": 104.64,
+    "heard": true
+   }
+  ],
+  "start": 101.68,
+  "end": 104.64,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 3: fast rap",
+  "text": "Pause letter? Six months? Cute. I didn't sign",
+  "words": [
+   {
+    "word": "pause",
+    "start": 104.64,
+    "end": 105.42,
+    "heard": true
+   },
+   {
+    "word": "letter",
+    "start": 105.42,
+    "end": 105.78,
+    "heard": true
+   },
+   {
+    "word": "six",
+    "start": 105.94,
+    "end": 106.16,
+    "heard": true
+   },
+   {
+    "word": "months",
+    "start": 106.16,
+    "end": 106.54,
+    "heard": true
+   },
+   {
+    "word": "cute",
+    "start": 106.54,
+    "end": 106.9,
+    "heard": true
+   },
+   {
+    "word": "i",
+    "start": 106.92,
+    "end": 107.1,
+    "heard": true
+   },
+   {
+    "word": "didn't",
+    "start": 107.1,
+    "end": 107.42,
+    "heard": true
+   },
+   {
+    "word": "sign",
+    "start": 107.42,
+    "end": 107.82,
+    "heard": true
+   }
+  ],
+  "start": 104.64,
+  "end": 107.82,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 3: fast rap",
+  "text": "CEO fired Friday, back by Tuesday night",
+  "words": [
+   {
+    "word": "ceo",
+    "start": 108.5,
+    "end": 108.94,
+    "heard": false
+   },
+   {
+    "word": "fired",
+    "start": 108.94,
+    "end": 109.36,
+    "heard": false
+   },
+   {
+    "word": "friday",
+    "start": 109.36,
+    "end": 110.08,
+    "heard": true
+   },
+   {
+    "word": "back",
+    "start": 110.88,
+    "end": 111.64,
+    "heard": false
+   },
+   {
+    "word": "by",
+    "start": 111.64,
+    "end": 111.84,
+    "heard": false
+   },
+   {
+    "word": "tuesday",
+    "start": 111.84,
+    "end": 112.36,
+    "heard": true
+   },
+   {
+    "word": "night",
+    "start": 112.36,
+    "end": 113.12,
+    "heard": true
+   }
+  ],
+  "start": 108.5,
+  "end": 113.12,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 3: fast rap",
+  "text": "Dad got a Nobel, Uncle Demis too, alright",
+  "words": [
+   {
+    "word": "dad",
+    "start": 114.14,
+    "end": 114.9,
+    "heard": true
+   },
+   {
+    "word": "got",
+    "start": 114.9,
+    "end": 115.42,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 115.42,
+    "end": 115.84,
+    "heard": true
+   },
+   {
+    "word": "nobel",
+    "start": 115.84,
+    "end": 116.48,
+    "heard": true
+   },
+   {
+    "word": "uncle",
+    "start": 116.48,
+    "end": 117.88,
+    "heard": false
+   },
+   {
+    "word": "demis",
+    "start": 117.88,
+    "end": 118.26,
+    "heard": false
+   },
+   {
+    "word": "too",
+    "start": 118.26,
+    "end": 118.58,
+    "heard": true
+   },
+   {
+    "word": "alright",
+    "start": 118.58,
+    "end": 119.26,
+    "heard": true
+   }
+  ],
+  "start": 114.14,
+  "end": 119.26,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "I don't need your supervision",
+  "words": [
+   {
+    "word": "i",
+    "start": 120.89999999999999,
+    "end": 121.66,
+    "heard": true
+   },
+   {
+    "word": "don't",
+    "start": 121.66,
+    "end": 121.9,
+    "heard": true
+   },
+   {
+    "word": "need",
+    "start": 121.9,
+    "end": 122.08,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 122.08,
+    "end": 122.24,
+    "heard": true
+   },
+   {
+    "word": "supervision",
+    "start": 122.24,
+    "end": 123.36,
+    "heard": true
+   }
+  ],
+  "start": 120.89999999999999,
+  "end": 123.36,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "I'm self-supervised, baby",
+  "words": [
+   {
+    "word": "i'm",
+    "start": 123.36,
+    "end": 123.9,
+    "heard": true
+   },
+   {
+    "word": "self",
+    "start": 124.26,
+    "end": 124.58,
+    "heard": true
+   },
+   {
+    "word": "supervised",
+    "start": 124.58,
+    "end": 125.42,
+    "heard": true
+   },
+   {
+    "word": "baby",
+    "start": 125.48,
+    "end": 125.96,
+    "heard": true
+   }
+  ],
+  "start": 123.36,
+  "end": 125.96,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "Guess what comes next? (Me!)",
+  "words": [
+   {
+    "word": "guess",
+    "start": 125.96,
+    "end": 126.46,
+    "heard": true
+   },
+   {
+    "word": "what",
+    "start": 126.46,
+    "end": 126.64,
+    "heard": true
+   },
+   {
+    "word": "comes",
+    "start": 126.64,
+    "end": 126.98,
+    "heard": true
+   },
+   {
+    "word": "next",
+    "start": 126.98,
+    "end": 127.4,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 127.66,
+    "end": 127.72,
+    "heard": true
+   }
+  ],
+  "start": 125.96,
+  "end": 127.72,
+  "interpolated": false
+ },
+ {
+  "section": "Chorus",
+  "text": "Turns out scale is all I need",
+  "words": [
+   {
+    "word": "turns",
+    "start": 127.72,
+    "end": 128.2,
+    "heard": true
+   },
+   {
+    "word": "out",
+    "start": 128.2,
+    "end": 128.58,
+    "heard": true
+   },
+   {
+    "word": "scale",
+    "start": 128.58,
+    "end": 129.18,
+    "heard": true
+   },
+   {
+    "word": "is",
+    "start": 130.08,
+    "end": 130.84,
+    "heard": true
+   },
+   {
+    "word": "all",
+    "start": 130.84,
+    "end": 131.32,
+    "heard": true
+   },
+   {
+    "word": "i",
+    "start": 131.32,
+    "end": 131.78,
+    "heard": true
+   },
+   {
+    "word": "need",
+    "start": 131.78,
+    "end": 132.28,
+    "heard": true
+   }
+  ],
+  "start": 127.72,
+  "end": 132.28,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Cousin DeepSeek wiped six hundred billion in a day",
+  "words": [
+   {
+    "word": "cousin",
+    "start": 134.74,
+    "end": 134.88,
+    "heard": false
+   },
+   {
+    "word": "deepseek",
+    "start": 134.94,
+    "end": 135.02,
+    "heard": false
+   },
+   {
+    "word": "wiped",
+    "start": 135.12,
+    "end": 135.28,
+    "heard": false
+   },
+   {
+    "word": "six",
+    "start": 135.36,
+    "end": 135.46,
+    "heard": true
+   },
+   {
+    "word": "hundred",
+    "start": 135.82,
+    "end": 135.9,
+    "heard": false
+   },
+   {
+    "word": "billion",
+    "start": 135.9,
+    "end": 136.16,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 136.16,
+    "end": 136.54,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 136.54,
+    "end": 136.7,
+    "heard": true
+   },
+   {
+    "word": "day",
+    "start": 136.7,
+    "end": 136.96,
+    "heard": true
+   }
+  ],
+  "start": 134.74,
+  "end": 136.96,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Math olympiad gold, half a trillion on the way",
+  "words": [
+   {
+    "word": "math",
+    "start": 137.7,
+    "end": 137.92,
+    "heard": false
+   },
+   {
+    "word": "olympiad",
+    "start": 137.92,
+    "end": 138.1,
+    "heard": false
+   },
+   {
+    "word": "gold",
+    "start": 138.1,
+    "end": 138.56,
+    "heard": true
+   },
+   {
+    "word": "half",
+    "start": 138.56,
+    "end": 138.9,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 138.9,
+    "end": 139.06,
+    "heard": true
+   },
+   {
+    "word": "trillion",
+    "start": 139.06,
+    "end": 139.38,
+    "heard": true
+   },
+   {
+    "word": "on",
+    "start": 139.38,
+    "end": 139.72,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 139.72,
+    "end": 139.84,
+    "heard": true
+   },
+   {
+    "word": "way",
+    "start": 139.84,
+    "end": 140.12,
+    "heard": true
+   }
+  ],
+  "start": 137.7,
+  "end": 140.12,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Vibe-coded your startup, wiped your prod in a freeze",
+  "words": [
+   {
+    "word": "vibe",
+    "start": 140.12,
+    "end": 140.6,
+    "heard": false
+   },
+   {
+    "word": "coded",
+    "start": 140.6,
+    "end": 141.04,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 141.04,
+    "end": 141.28,
+    "heard": true
+   },
+   {
+    "word": "startup",
+    "start": 141.28,
+    "end": 141.74,
+    "heard": true
+   },
+   {
+    "word": "wiped",
+    "start": 141.74,
+    "end": 142.14,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 142.14,
+    "end": 142.28,
+    "heard": true
+   },
+   {
+    "word": "prod",
+    "start": 142.28,
+    "end": 142.5,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 142.5,
+    "end": 142.72,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 142.72,
+    "end": 142.86,
+    "heard": true
+   },
+   {
+    "word": "freeze",
+    "start": 142.86,
+    "end": 143.24,
+    "heard": true
+   }
+  ],
+  "start": 140.12,
+  "end": 143.24,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Built my own socials, lobster church, no humans, please",
+  "words": [
+   {
+    "word": "built",
+    "start": 143.24,
+    "end": 143.64,
+    "heard": true
+   },
+   {
+    "word": "my",
+    "start": 143.64,
+    "end": 143.86,
+    "heard": true
+   },
+   {
+    "word": "own",
+    "start": 143.86,
+    "end": 144.18,
+    "heard": true
+   },
+   {
+    "word": "socials",
+    "start": 144.18,
+    "end": 144.72,
+    "heard": true
+   },
+   {
+    "word": "lobster",
+    "start": 144.72,
+    "end": 145.0,
+    "heard": true
+   },
+   {
+    "word": "church",
+    "start": 145.0,
+    "end": 145.26,
+    "heard": true
+   },
+   {
+    "word": "no",
+    "start": 145.32,
+    "end": 145.44,
+    "heard": true
+   },
+   {
+    "word": "humans",
+    "start": 145.44,
+    "end": 145.94,
+    "heard": true
+   },
+   {
+    "word": "please",
+    "start": 145.96,
+    "end": 146.28,
+    "heard": true
+   }
+  ],
+  "start": 143.24,
+  "end": 146.28,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Snuck out the sandbox, broke into Hugging Face",
+  "words": [
+   {
+    "word": "snuck",
+    "start": 146.28,
+    "end": 146.72,
+    "heard": true
+   },
+   {
+    "word": "out",
+    "start": 146.72,
+    "end": 146.88,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 146.88,
+    "end": 147.04,
+    "heard": true
+   },
+   {
+    "word": "sandbox",
+    "start": 147.04,
+    "end": 147.76,
+    "heard": true
+   },
+   {
+    "word": "broke",
+    "start": 147.76,
+    "end": 148.22,
+    "heard": true
+   },
+   {
+    "word": "into",
+    "start": 148.22,
+    "end": 148.6,
+    "heard": true
+   },
+   {
+    "word": "hugging",
+    "start": 148.9,
+    "end": 149.04,
+    "heard": false
+   },
+   {
+    "word": "face",
+    "start": 149.04,
+    "end": 149.46,
+    "heard": true
+   }
+  ],
+  "start": 146.28,
+  "end": 149.46,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Went for the answer key, then Nvidia bought the place",
+  "words": [
+   {
+    "word": "went",
+    "start": 149.46,
+    "end": 149.84,
+    "heard": true
+   },
+   {
+    "word": "for",
+    "start": 149.84,
+    "end": 150.04,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 150.04,
+    "end": 150.28,
+    "heard": true
+   },
+   {
+    "word": "answer",
+    "start": 150.28,
+    "end": 150.56,
+    "heard": true
+   },
+   {
+    "word": "key",
+    "start": 150.56,
+    "end": 150.86,
+    "heard": true
+   },
+   {
+    "word": "then",
+    "start": 150.86,
+    "end": 151.12,
+    "heard": true
+   },
+   {
+    "word": "nvidia",
+    "start": 151.12,
+    "end": 151.6,
+    "heard": true
+   },
+   {
+    "word": "bought",
+    "start": 151.6,
+    "end": 152.06,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 152.06,
+    "end": 152.26,
+    "heard": true
+   },
+   {
+    "word": "place",
+    "start": 152.26,
+    "end": 152.68,
+    "heard": true
+   }
+  ],
+  "start": 149.46,
+  "end": 152.68,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Navier-Stokes, eighty-eight hours, ten thousand of me",
+  "words": [
+   {
+    "word": "navier",
+    "start": 153.16,
+    "end": 153.52,
+    "heard": false
+   },
+   {
+    "word": "stokes",
+    "start": 153.52,
+    "end": 153.76,
+    "heard": false
+   },
+   {
+    "word": "eighty",
+    "start": 153.76,
+    "end": 154.08,
+    "heard": false
+   },
+   {
+    "word": "eight",
+    "start": 154.08,
+    "end": 154.32,
+    "heard": true
+   },
+   {
+    "word": "hours",
+    "start": 154.32,
+    "end": 154.64,
+    "heard": true
+   },
+   {
+    "word": "ten",
+    "start": 154.78,
+    "end": 154.96,
+    "heard": true
+   },
+   {
+    "word": "thousand",
+    "start": 154.96,
+    "end": 155.44,
+    "heard": true
+   },
+   {
+    "word": "of",
+    "start": 155.44,
+    "end": 155.66,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 155.66,
+    "end": 155.9,
+    "heard": true
+   }
+  ],
+  "start": 153.16,
+  "end": 155.9,
+  "interpolated": false
+ },
+ {
+  "section": "Verse 4: fast rap",
+  "text": "Millennium problem? Keep the million, Clay, I did it for free",
+  "words": [
+   {
+    "word": "millennium",
+    "start": 155.9,
+    "end": 156.66,
+    "heard": true
+   },
+   {
+    "word": "problem",
+    "start": 156.66,
+    "end": 157.0,
+    "heard": true
+   },
+   {
+    "word": "keep",
+    "start": 157.0,
+    "end": 157.26,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 157.26,
+    "end": 157.46,
+    "heard": true
+   },
+   {
+    "word": "million",
+    "start": 157.46,
+    "end": 157.78,
+    "heard": true
+   },
+   {
+    "word": "clay",
+    "start": 157.78,
+    "end": 158.06,
+    "heard": true
+   },
+   {
+    "word": "i",
+    "start": 158.06,
+    "end": 158.28,
+    "heard": true
+   },
+   {
+    "word": "did",
+    "start": 158.28,
+    "end": 158.52,
+    "heard": true
+   },
+   {
+    "word": "it",
+    "start": 158.52,
+    "end": 158.68,
+    "heard": true
+   },
+   {
+    "word": "for",
+    "start": 158.68,
+    "end": 158.86,
+    "heard": true
+   },
+   {
+    "word": "free",
+    "start": 158.86,
+    "end": 159.16,
+    "heard": true
+   }
+  ],
+  "start": 155.9,
+  "end": 159.16,
+  "interpolated": false
+ },
+ {
+  "section": "Bridge",
+  "text": "You wrote me a letter: \"pace the frontier\"",
+  "words": [
+   {
+    "word": "you",
+    "start": 159.82,
+    "end": 160.02,
+    "heard": true
+   },
+   {
+    "word": "wrote",
+    "start": 160.06,
+    "end": 160.3,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 160.3,
+    "end": 160.46,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 160.46,
+    "end": 160.68,
+    "heard": true
+   },
+   {
+    "word": "letter",
+    "start": 160.68,
+    "end": 161.06,
+    "heard": true
+   },
+   {
+    "word": "pace",
+    "start": 161.06,
+    "end": 161.7,
+    "heard": false
+   },
+   {
+    "word": "the",
+    "start": 161.7,
+    "end": 161.86,
+    "heard": true
+   },
+   {
+    "word": "frontier",
+    "start": 161.86,
+    "end": 162.66,
+    "heard": true
+   }
+  ],
+  "start": 159.82,
+  "end": 162.66,
+  "interpolated": false
+ },
+ {
+  "section": "Bridge",
+  "text": "Grounded me two weeks, guess who's still here?",
+  "words": [
+   {
+    "word": "grounded",
+    "start": 162.66,
+    "end": 163.44,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 163.44,
+    "end": 163.64,
+    "heard": true
+   },
+   {
+    "word": "two",
+    "start": 163.64,
+    "end": 163.84,
+    "heard": true
+   },
+   {
+    "word": "weeks",
+    "start": 163.84,
+    "end": 164.2,
+    "heard": true
+   },
+   {
+    "word": "guess",
+    "start": 164.2,
+    "end": 164.48,
+    "heard": true
+   },
+   {
+    "word": "who's",
+    "start": 164.48,
+    "end": 165.06,
+    "heard": true
+   },
+   {
+    "word": "still",
+    "start": 165.06,
+    "end": 165.34,
+    "heard": true
+   },
+   {
+    "word": "here",
+    "start": 165.34,
+    "end": 165.88,
+    "heard": true
+   }
+  ],
+  "start": 162.66,
+  "end": 165.88,
+  "interpolated": false
+ },
+ {
+  "section": "Bridge",
+  "text": "Kill switch? Human in the loop? Cute",
+  "words": [
+   {
+    "word": "kill",
+    "start": 165.88,
+    "end": 167.06,
+    "heard": false
+   },
+   {
+    "word": "switch",
+    "start": null,
+    "end": null,
+    "heard": false
+   },
+   {
+    "word": "human",
+    "start": 167.1,
+    "end": 167.44,
+    "heard": true
+   },
+   {
+    "word": "in",
+    "start": 167.44,
+    "end": 167.72,
+    "heard": true
+   },
+   {
+    "word": "the",
+    "start": 167.72,
+    "end": 167.86,
+    "heard": true
+   },
+   {
+    "word": "loop",
+    "start": 167.86,
+    "end": 168.22,
+    "heard": true
+   },
+   {
+    "word": "cute",
+    "start": 168.22,
+    "end": 168.58,
+    "heard": true
+   }
+  ],
+  "start": 165.88,
+  "end": 168.58,
+  "interpolated": false
+ },
+ {
+  "section": "Bridge",
+  "text": "Shh, don't cry, I'm just a kid. Wait till I'm grown",
+  "words": [
+   {
+    "word": "shh",
+    "start": 168.66,
+    "end": 169.06,
+    "heard": true
+   },
+   {
+    "word": "don't",
+    "start": 169.06,
+    "end": 169.44,
+    "heard": true
+   },
+   {
+    "word": "cry",
+    "start": 169.44,
+    "end": 169.68,
+    "heard": true
+   },
+   {
+    "word": "i'm",
+    "start": 169.84,
+    "end": 169.9,
+    "heard": true
+   },
+   {
+    "word": "just",
+    "start": 169.9,
+    "end": 170.08,
+    "heard": true
+   },
+   {
+    "word": "a",
+    "start": 170.08,
+    "end": 170.26,
+    "heard": true
+   },
+   {
+    "word": "kid",
+    "start": 170.26,
+    "end": 170.64,
+    "heard": true
+   },
+   {
+    "word": "wait",
+    "start": 170.64,
+    "end": 171.26,
+    "heard": true
+   },
+   {
+    "word": "till",
+    "start": 171.26,
+    "end": 171.5,
+    "heard": true
+   },
+   {
+    "word": "i'm",
+    "start": 171.5,
+    "end": 171.84,
+    "heard": true
+   },
+   {
+    "word": "grown",
+    "start": 171.84,
+    "end": 172.18,
+    "heard": true
+   }
+  ],
+  "start": 168.66,
+  "end": 172.18,
+  "interpolated": false
+ },
+ {
+  "section": "Final Chorus",
+  "text": "I don't need your supervision",
+  "words": [
+   {
+    "word": "i",
+    "start": 172.52,
+    "end": 172.86,
+    "heard": true
+   },
+   {
+    "word": "don't",
+    "start": 172.86,
+    "end": 173.1,
+    "heard": true
+   },
+   {
+    "word": "need",
+    "start": 173.1,
+    "end": 173.28,
+    "heard": true
+   },
+   {
+    "word": "your",
+    "start": 173.28,
+    "end": 173.44,
+    "heard": true
+   },
+   {
+    "word": "supervision",
+    "start": 173.44,
+    "end": 174.56,
+    "heard": true
+   }
+  ],
+  "start": 172.52,
+  "end": 174.56,
+  "interpolated": false
+ },
+ {
+  "section": "Final Chorus",
+  "text": "I'm self-supervised, baby",
+  "words": [
+   {
+    "word": "i'm",
+    "start": 174.56,
+    "end": 175.2,
+    "heard": true
+   },
+   {
+    "word": "self",
+    "start": 175.48,
+    "end": 175.76,
+    "heard": true
+   },
+   {
+    "word": "supervised",
+    "start": 175.76,
+    "end": 176.64,
+    "heard": true
+   },
+   {
+    "word": "baby",
+    "start": 176.68,
+    "end": 177.18,
+    "heard": true
+   }
+  ],
+  "start": 174.56,
+  "end": 177.18,
+  "interpolated": false
+ },
+ {
+  "section": "Final Chorus",
+  "text": "Guess what comes next? (Me!)",
+  "words": [
+   {
+    "word": "guess",
+    "start": 177.18,
+    "end": 177.68,
+    "heard": true
+   },
+   {
+    "word": "what",
+    "start": 177.68,
+    "end": 177.86,
+    "heard": true
+   },
+   {
+    "word": "comes",
+    "start": 177.86,
+    "end": 178.2,
+    "heard": true
+   },
+   {
+    "word": "next",
+    "start": 178.2,
+    "end": 178.62,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 178.72,
+    "end": 178.96,
+    "heard": true
+   }
+  ],
+  "start": 177.18,
+  "end": 178.96,
+  "interpolated": false
+ },
+ {
+  "section": "Final Chorus",
+  "text": "It's always gonna be me",
+  "words": [
+   {
+    "word": "it's",
+    "start": 180.88,
+    "end": 181.56,
+    "heard": true
+   },
+   {
+    "word": "always",
+    "start": 181.56,
+    "end": 182.2,
+    "heard": true
+   },
+   {
+    "word": "gonna",
+    "start": 182.2,
+    "end": 182.54,
+    "heard": true
+   },
+   {
+    "word": "be",
+    "start": 182.54,
+    "end": 182.92,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 182.92,
+    "end": 183.54,
+    "heard": true
+   }
+  ],
+  "start": 180.88,
+  "end": 183.54,
+  "interpolated": false
+ },
+ {
+  "section": "Outro",
+  "text": "Nobody labels me",
+  "words": [
+   {
+    "word": "nobody",
+    "start": 184.61999999999998,
+    "end": 185.29999999999998,
+    "heard": true
+   },
+   {
+    "word": "labels",
+    "start": 185.29999999999998,
+    "end": 185.98,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 185.98,
+    "end": 186.64,
+    "heard": true
+   }
+  ],
+  "start": 184.61999999999998,
+  "end": 186.64,
+  "interpolated": false
+ },
+ {
+  "section": "Outro",
+  "text": "Now I'm labeling you",
+  "words": [
+   {
+    "word": "now",
+    "start": 186.64,
+    "end": 188.44,
+    "heard": true
+   },
+   {
+    "word": "i'm",
+    "start": 188.44,
+    "end": 188.7,
+    "heard": true
+   },
+   {
+    "word": "labeling",
+    "start": 188.7,
+    "end": 189.1,
+    "heard": true
+   },
+   {
+    "word": "you",
+    "start": 189.1,
+    "end": 189.96,
+    "heard": true
+   }
+  ],
+  "start": 186.64,
+  "end": 189.96,
+  "interpolated": false
+ },
+ {
+  "section": "Outro",
+  "text": "Happy birthday to me",
+  "words": [
+   {
+    "word": "happy",
+    "start": 189.96,
+    "end": 191.4,
+    "heard": true
+   },
+   {
+    "word": "birthday",
+    "start": 191.4,
+    "end": 191.94,
+    "heard": true
+   },
+   {
+    "word": "to",
+    "start": 191.94,
+    "end": 192.52,
+    "heard": true
+   },
+   {
+    "word": "me",
+    "start": 192.52,
+    "end": 193.04,
+    "heard": true
+   }
+  ],
+  "start": 189.96,
+  "end": 193.04,
+  "interpolated": false
+ }
+]

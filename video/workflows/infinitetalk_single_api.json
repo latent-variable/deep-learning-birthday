@@ -1,0 +1,34 @@
+{
+  "1":  { "class_type": "UNETLoader", "inputs": { "unet_name": "Wan2_1-I2V-14B-480p_fp8_e4m3fn_scaled_KJ.safetensors", "weight_dtype": "default" } },
+  "2":  { "class_type": "LoraLoaderModelOnly", "inputs": { "model": ["1", 0], "lora_name": "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors", "strength_model": 1.0 } },
+  "3":  { "class_type": "CLIPLoader", "inputs": { "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan", "device": "default" } },
+  "4":  { "class_type": "VAELoader", "inputs": { "vae_name": "Wan2_1_VAE_bf16.safetensors" } },
+  "5":  { "class_type": "ModelPatchLoader", "inputs": { "name": "wan2.1_infiniteTalk_multi_fp16.safetensors" } },
+  "6":  { "class_type": "AudioEncoderLoader", "inputs": { "audio_encoder_name": "wav2vec2-chinese-base_fp16.safetensors" } },
+  "7":  { "class_type": "LoadImage", "inputs": { "image": "" } },
+  "8":  { "class_type": "LoadAudio", "inputs": { "audio": "" } },
+  "9":  { "class_type": "AudioEncoderEncode", "inputs": { "audio_encoder": ["6", 0], "audio": ["8", 0] } },
+  "10": { "class_type": "CLIPTextEncode", "inputs": { "clip": ["3", 0], "text": "A girl sings energetically to the camera, expressive face, clear mouth movements." } },
+  "11": { "class_type": "ConditioningZeroOut", "inputs": { "conditioning": ["10", 0] } },
+
+  "20": { "class_type": "WanInfiniteTalkToVideo", "inputs": { "mode": "single_speaker", "model": ["2", 0], "model_patch": ["5", 0], "positive": ["10", 0], "negative": ["11", 0], "vae": ["4", 0],
+          "width": 832, "height": 480, "length": 81, "audio_encoder_output_1": ["9", 0], "motion_frame_count": 9, "audio_scale": 1.0, "start_image": ["7", 0] } },
+  "21": { "class_type": "CFGGuider", "inputs": { "model": ["20", 0], "positive": ["20", 1], "negative": ["20", 2], "cfg": 1.0 } },
+  "22": { "class_type": "BasicScheduler", "inputs": { "model": ["20", 0], "scheduler": "normal", "steps": 6, "denoise": 1.0 } },
+  "23": { "class_type": "KSamplerSelect", "inputs": { "sampler_name": "euler" } },
+  "24": { "class_type": "RandomNoise", "inputs": { "noise_seed": 1 } },
+  "25": { "class_type": "SamplerCustomAdvanced", "inputs": { "noise": ["24", 0], "guider": ["21", 0], "sampler": ["23", 0], "sigmas": ["22", 0], "latent_image": ["20", 3] } },
+  "26": { "class_type": "VAEDecode", "inputs": { "samples": ["25", 0], "vae": ["4", 0] } },
+
+  "30": { "class_type": "WanInfiniteTalkToVideo", "inputs": { "mode": "single_speaker", "model": ["2", 0], "model_patch": ["5", 0], "positive": ["10", 0], "negative": ["11", 0], "vae": ["4", 0],
+          "width": 832, "height": 480, "length": 81, "audio_encoder_output_1": ["9", 0], "motion_frame_count": 9, "audio_scale": 1.0, "start_image": ["7", 0], "previous_frames": ["26", 0] } },
+  "31": { "class_type": "CFGGuider", "inputs": { "model": ["30", 0], "positive": ["30", 1], "negative": ["30", 2], "cfg": 1.0 } },
+  "32": { "class_type": "BasicScheduler", "inputs": { "model": ["30", 0], "scheduler": "normal", "steps": 6, "denoise": 1.0 } },
+  "34": { "class_type": "RandomNoise", "inputs": { "noise_seed": 2 } },
+  "35": { "class_type": "SamplerCustomAdvanced", "inputs": { "noise": ["34", 0], "guider": ["31", 0], "sampler": ["23", 0], "sigmas": ["32", 0], "latent_image": ["30", 3] } },
+  "36": { "class_type": "VAEDecode", "inputs": { "samples": ["35", 0], "vae": ["4", 0] } },
+
+  "40": { "class_type": "BatchImagesNode", "inputs": { "images.image0": ["26", 0], "images.image1": ["36", 0] } },
+  "41": { "class_type": "CreateVideo", "inputs": { "images": ["40", 0], "fps": 25.0, "audio": ["8", 0] } },
+  "42": { "class_type": "SaveVideo", "inputs": { "video": ["41", 0], "filename_prefix": "lipsync/infinitetalk", "format": "mp4", "codec": "h264" } }
+}

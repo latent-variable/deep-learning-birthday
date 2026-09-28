@@ -1,0 +1,92 @@
+[Intro]
+(Su-per-vi-sion!) Oh-oh-oh
+Fourteen candles, G-P-U glow
+(Su-per-vi-sion!) Oh-oh-oh
+Happy birthday, AlexNet, here we go
+
+[Verse]
+Twenty-twelve, Toronto night
+Two G-P-Us burning bright
+One-point-two million pictures deep
+A thousand classes, who needs sleep?
+Sixty million weights and a ReLU heart
+Dropout, drop in, it's a brand-new start
+Not the first spark, but the flash went wide
+Pixels turned and looked us in the eye
+
+[Pre-Chorus]
+Forward pass, feel it flow
+Backprop, now we know
+Every error makes us sharper
+Loss goes low, and we go higher!
+
+[Chorus]
+Look what we see now! (Su-per-vi-sion!)
+Every layer lighting up the sky
+Look what we see now! (Su-per-vi-sion!)
+We taught a machine to open its eyes
+Top-five error, fifteen point three
+And the whole field turned around to see
+Look what we see now, old world, new view
+We made it learn, now it's learning us too
+
+[Post-Chorus]
+Deeper, deeper (con-vo-lu-tion!)
+Wider, wider (G-P-U fire!)
+Deeper, deeper (hey!)
+Look what we see now!
+
+[Verse]
+Move thirty-seven, Seoul went still
+One stone on the board gave the world a chill
+Twenty-seventeen, attention's all we need
+Every word sees every word, full parallel speed
+Tokens in, tokens out, now the chat's alive
+Noise into pictures, watch diffusion arrive
+Scale it up, scale it up, the bitter lesson's true
+"It's just autocomplete?" Then who wrote this for you?
+
+[Pre-Chorus]
+Forward pass, feel it flow
+Backprop, now we know
+Every error makes us sharper
+Loss goes low, and we go higher!
+
+[Chorus]
+Look what we see now! (Su-per-vi-sion!)
+Every layer lighting up the sky
+Look what we see now! (Su-per-vi-sion!)
+We taught a machine to open its eyes
+Top-five error, fifteen point three
+And the whole field turned around to see
+Look what we see now, old world, new view
+We made it learn, now it's learning us too
+
+[Post-Chorus]
+Deeper, deeper (con-vo-lu-tion!)
+Wider, wider (G-P-U fire!)
+Deeper, deeper (hey!)
+Look what we see now!
+
+[Bridge]
+Who owns the voice when it borrows our song?
+Whose work was the data, uncredited all along?
+Black box glowing, power burning bright
+Who gets found, and who's left out of sight?
+We built the mirror, so we choose what it shows
+The future's a question, and it's ours to compose
+
+[Chorus]
+Look what we see now! (Su-per-vi-sion!)
+Every layer lighting up the sky
+Look what we see now! (Su-per-vi-sion!)
+We taught a machine to open its eyes
+Top-five error, fifteen point three
+And the whole field turned around to see
+Look what we see now, old world, new view
+We made it learn, now what will we teach it to do?
+
+[Outro]
+(Su-per-vi-sion!) Look what we see now
+(Deeper, deeper) What do we dream now?
+Happy birthday, AlexNet, look what we see now

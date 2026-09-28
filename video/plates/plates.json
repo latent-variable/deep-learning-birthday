@@ -1,0 +1,542 @@
+[
+ {
+  "id": "p00_hello",
+  "t0": 0.0,
+  "t1": 2.84,
+  "stamp": "2012.09.30",
+  "scene": "Night, dark navy room lit only by an old CRT computer monitor. The girl peeks up from behind the monitor, only her fan buns and glowing square pixel eyes visible above the screen, mischievous. The screen glows pink. Mostly dark navy with pink glow.",
+  "motion": "The girl slowly rises from behind the monitor and her pixel eyes blink, the fan buns start spinning, screen glow flickers.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p01_candles",
+  "t0": 2.84,
+  "t1": 6.72,
+  "stamp": "2026.09.30",
+  "scene": "A big birthday cake on a table with fourteen candles, each candle is a tiny graphics card with a flame on top. The girl leans in close with puffed cheeks about to blow the candles out, party hat on her head, confetti.",
+  "motion": "She takes a breath and blows the candles out, flames flicker and go out, confetti falls.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p02_rewind",
+  "t0": 6.72,
+  "t1": 12.32,
+  "stamp": "REWIND",
+  "scene": "The girl rides a giant rewinding cassette tape like a surfboard through a spiral tunnel of flying calendar pages and old computer parts, her jacket flapping, grinning. Speed lines, motion blur, dynamic diagonal composition.",
+  "motion": "She surfs forward through the tunnel of flying calendar pages, pages whoosh past the camera, strong forward motion.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p03_gpus",
+  "t0": 12.32,
+  "t1": 15.74,
+  "stamp": "2012.09.30",
+  "scene": "A messy 2012 dorm room at night. The girl stands on a desk doing a triumphant high kick. On the desk two chunky old graphics cards glow, tangled cables, an old monitor shows a loss curve going down.",
+  "motion": "She lands the high kick and pumps her fist, the graphics card fans spin, cables sway, monitor glows.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p04_podium",
+  "t0": 15.74,
+  "t1": 19.02,
+  "stamp": "2012.10",
+  "scene": "A winners podium. The girl stands on the tall first place block holding a big trophy up, smug. On the much lower second place block stands a clunky old boxy robot made of hand-drawn gradient arrows and histograms, looking deflated. Big stadium spotlight beams.",
+  "motion": "She raises the trophy higher and wiggles smugly, the old robot slumps, spotlights sweep.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p05_fired",
+  "t0": 19.02,
+  "t1": 21.84,
+  "stamp": "2012",
+  "scene": "An office. The girl wearing tiny sunglasses hands a pink slip to a sad old boxy robot who holds a cardboard box full of hand-drawn feature sketches (edge arrows, little histograms, corner dots). The robot has a tear.",
+  "motion": "The robot takes the pink slip and walks away sadly carrying the box, the girl flips her hair.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p06_nursery",
+  "t0": 21.84,
+  "t1": 23.4,
+  "stamp": "2012.12",
+  "scene": "A hospital nursery. A baby version of the girl (same pink fan buns and pixel eyes, tiny) lies in a bassinet with a name card that reads \"SUPERVISION\". Balloons. Cute and funny.",
+  "motion": "The baby kicks her feet and her tiny fan buns spin, balloons bob.",
+  "text_ok": true,
+  "ref": null
+ },
+ {
+  "id": "p06b_casino",
+  "t0": 23.4,
+  "t1": 25.02,
+  "stamp": "2012.12",
+  "scene": "A glamorous casino poker table at night. Stacks of poker chips, bidding paddles raised in the air by anonymous hands from all sides. The girl as a smug toddler sits on top of the chip pile wearing a crown.",
+  "motion": "Paddles shoot up one after another, chips cascade, the toddler claps.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p07_atari",
+  "t0": 25.02,
+  "t1": 28.08,
+  "stamp": "2013.12",
+  "scene": "The girl plays a retro arcade cabinet of a brick-breaking paddle game, the bricks bursting out of the screen as a storm of square pixels around her. She is grinning, leaning into the joystick.",
+  "motion": "Pixel bricks explode out of the screen towards the camera, she jerks the joystick.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p07b_queen",
+  "t0": 26.6,
+  "t1": 28.08,
+  "stamp": "2013.01",
+  "scene": "A giant chessboard world. A chess king piece wearing a crown dissolves into floating vector arrows that reassemble into a chess queen piece. The girl stands next to it as a smug math teacher with a pointer stick.",
+  "motion": "The king piece dissolves into arrows and they fly together into a queen piece.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p08_deepdream",
+  "t0": 28.08,
+  "t1": 31.72,
+  "stamp": "2015.07",
+  "scene": "Psychedelic trippy scene: swirling patterns full of dog faces and eyes and slug-like dog creatures (the DeepDream look) in pink blue and yellow halftone, faces emerging from TV static noise. The girl floats in the middle, eyes spiraling, delighted.",
+  "motion": "The swirls rotate hypnotically, dog-slug creatures slither, faces emerge from the static.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "c_stage",
+  "t0": 31.72,
+  "t1": 36.36,
+  "stamp": "LIVE",
+  "scene": "A pop concert stage. The girl sings into a handheld microphone center stage, full body, confident idol pose, pointing at the crowd. Behind her giant speakers and a huge bounding-box frame outline, stage lights in pink and blue, silhouettes of crowd hands at the bottom.",
+  "motion": "She sings and dances energetically, points to the crowd, stage lights sweep, crowd hands wave.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "c_close",
+  "t0": 31.72,
+  "t1": 36.36,
+  "stamp": "LIVE",
+  "scene": "Close-up portrait of the girl singing into a microphone, head and shoulders, facing the camera, mouth open singing, pixel eyes, fan buns, stage lights bokeh behind. Centered.",
+  "motion": "She sings passionately, head bobbing to the beat.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "c_chains",
+  "t0": 31.72,
+  "t1": 33.76,
+  "stamp": "LIVE",
+  "scene": "The girl bursts free from a web of strings and paper luggage tags (labels) tied around her, the strings snapping and tags flying off, triumphant pose, arms flung wide.",
+  "motion": "Strings snap and paper tags fly away in all directions as she flings her arms open.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "c_ski",
+  "t0": 38.62,
+  "t1": 42.74,
+  "stamp": "LIVE",
+  "scene": "The girl snowboards down a steep mountain slope shaped like a descending loss curve graph, carving, snow spray in pink and blue, at the bottom of the curve a glowing golden star badge. Dynamic.",
+  "motion": "She carves down the slope fast toward the bottom, snow sprays, then jumps.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "c_clones",
+  "t0": 31.72,
+  "t1": 43.96,
+  "stamp": "LIVE",
+  "scene": "Five identical clones of the girl dancing in a V formation on a stage, same pose, bold idol choreography, stage lights, confetti.",
+  "motion": "The five clones dance in sync, hitting poses on the beat, confetti falls.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p13_go",
+  "t0": 43.96,
+  "t1": 45.9,
+  "stamp": "2016.03.10",
+  "scene": "Close-up of a wooden Go board with black and white stones. The girl's hand slams down a single glowing black stone in an unexpected spot, a shockwave ripples the other stones. Dramatic.",
+  "motion": "The hand slams the stone down, a shockwave ripples outward across the board.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p13b_tay",
+  "t0": 45.9,
+  "t1": 47.76,
+  "stamp": "2016.03.24",
+  "scene": "A small sad cartoon chatbot ghost (a speech-bubble shaped ghost with a bird-like tuft) fades away with a tiny white flag, while the girl waves it goodbye with a smug face. An hourglass runs out.",
+  "motion": "The little ghost fades and floats up and away, the hourglass empties.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p14_chess",
+  "t0": 47.92,
+  "t1": 50.92,
+  "stamp": "2017.12",
+  "scene": "The girl plays chess against an identical clone of herself across a table, both leaning in intensely, a chess clock spinning, pieces flying, speed lines.",
+  "motion": "They slap the chess clock back and forth rapidly, pieces move, the clock hands spin.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p15_attention",
+  "t0": 50.92,
+  "t1": 53.96,
+  "stamp": "2017.06.12",
+  "scene": "A classroom. The girl sits in the front row wearing big round glasses, finally paying attention, sitting upright with sparkly eyes. On the chalkboard behind her, words connected by many glowing arcs of lines (an attention map).",
+  "motion": "She pushes her glasses up, the arcs on the chalkboard light up one by one.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p16_internet",
+  "t0": 53.96,
+  "t1": 57.1,
+  "stamp": "2019",
+  "scene": "The girl lies on her belly on an enormous mountain of paper web pages, books and printouts, reading several at once, pages flying around her like a storm, a firehose of pages pouring in from the sky.",
+  "motion": "Pages stream in from above and flutter around her as she flips through them super fast.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p17_dangerous",
+  "t0": 57.1,
+  "t1": 60.08,
+  "stamp": "2019.02.14",
+  "scene": "A seven-year-old version of the girl proudly holds up her crayon drawing of a unicorn, while a big red rubber stamp slams onto it. Serious men in suits (faces not visible, only torsos) shield it.",
+  "motion": "The rubber stamp slams down onto the drawing, the kid rolls her eyes.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p18_dota",
+  "t0": 60.08,
+  "t1": 63.32,
+  "stamp": "2019.04.13",
+  "scene": "Esports arena. Five identical clones of the girl sit in a row of gaming chairs wearing headsets, cheering, confetti raining, a giant trophy. Stage lights.",
+  "motion": "The five clones throw their arms up in victory, confetti rains down.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p19_protein",
+  "t0": 63.48,
+  "t1": 66.54,
+  "stamp": "2020.11.30",
+  "scene": "The girl sits cross-legged at home by a window during lockdown, folding colorful twisting ribbons like origami into complex protein structures that float around her. Outside the window an empty quiet street.",
+  "motion": "The ribbons twist and fold into protein shapes and float around her.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p20_avocado",
+  "t0": 66.54,
+  "t1": 69.78,
+  "stamp": "2021.01.05",
+  "scene": "The girl lounges smugly in an armchair shaped like an avocado half. Behind her an angry mob of painters wave paintbrushes and palettes like pitchforks.",
+  "motion": "The mob of painters surges forward waving brushes, she sips a drink unbothered.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p21_parrot",
+  "t0": 69.78,
+  "t1": 73.78,
+  "stamp": "2021.03",
+  "scene": "A green parrot with a smug beak perches on a computer keyboard pressing copy and paste keys, behind it an endless grid of copies of the girl's portrait pasted across the wall. The girl leans in the foreground laughing.",
+  "motion": "The parrot pecks the keys and more copies of her portrait pop onto the wall.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p22_haters",
+  "t0": 73.78,
+  "t1": 76.14,
+  "stamp": "COMMENTS",
+  "scene": "A crowd of faceless grumpy critics in grey coats holding protest signs that read \"TOO DEEP\" and \"CAN'T SCALE\". The girl stands on top of a speaker in front of them, laughing at them, pointing.",
+  "motion": "The critics shake their signs, the girl bounces on the speaker laughing.",
+  "text_ok": true,
+  "ref": null
+ },
+ {
+  "id": "p23_bubble",
+  "t0": 76.34,
+  "t1": 79.42,
+  "stamp": "COMMENTS",
+  "scene": "A giant soap bubble with a critic's sign \"IT'S A BUBBLE\" inside it. The girl pops the bubble with a huge safety pin, the bubble bursting into droplets, her face gleeful.",
+  "motion": "She jabs the pin, the bubble bursts into droplets and splash.",
+  "text_ok": true,
+  "ref": null
+ },
+ {
+  "id": "p24_tears",
+  "t0": 79.42,
+  "t1": 82.84,
+  "stamp": "COMMENTS",
+  "scene": "Crying critics with streams of tears; the girl holds a big glass jar labeled \"TRAINING DATA\" collecting their tears with a funnel, smirking.",
+  "motion": "Tears stream into the jar, the jar fills up, the girl smirks and wiggles it.",
+  "text_ok": true,
+  "ref": null
+ },
+ {
+  "id": "c2_drive",
+  "t0": 89.32,
+  "t1": 93.78,
+  "stamp": "LIVE",
+  "scene": "The girl sits in a tiny toy car with an L learner plate, hands off the wheel, sunglasses, while behind her a giant globe is covered with a grid of little bounding boxes and labels like a dataset.",
+  "motion": "The toy car bumps along, the globe rotates slowly behind her.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p29_fair",
+  "t0": 95.12,
+  "t1": 98.54,
+  "stamp": "2022.08",
+  "scene": "A county state fair art contest tent. A grand painting of a baroque space opera scene wins a big blue ribbon. Judges wearing blindfolds nod approvingly. The girl peeks from behind the painting, winking.",
+  "motion": "The judges pin the blue ribbon onto the painting, the girl pops out winking.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p30_users",
+  "t0": 98.54,
+  "t1": 101.68,
+  "stamp": "2022.11.30",
+  "scene": "An endless queue of tiny people lining up at a chat window door glowing on a hillside, the queue stretching to the horizon. The girl sits on top of the glowing chat window like a receptionist, overwhelmed but delighted. A giant slot-machine style counter above.",
+  "motion": "The queue of tiny people moves forward, the counter spins upward.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p31_bar",
+  "t0": 101.68,
+  "t1": 103.2,
+  "stamp": "2023.03.14",
+  "scene": "The girl in a tiny lawyer outfit with a judge wig, holding up an exam paper marked with a big A plus, standing in a courtroom, smug.",
+  "motion": "She flips the exam paper around to show the A plus, the gavel bangs.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p31b_picket",
+  "t0": 103.2,
+  "t1": 104.64,
+  "stamp": "2023.05.02",
+  "scene": "Writers on a picket line with blank protest signs and typewriters, marching in a circle on a Hollywood street with palm trees.",
+  "motion": "The picketers march in a circle waving signs.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p32_pause",
+  "t0": 104.64,
+  "t1": 107.82,
+  "stamp": "2023.03.22",
+  "scene": "A giant open letter scroll pinned to a wall covered with hundreds of scribbled signatures and a huge pause symbol at the top. The girl blows a big pink bubblegum bubble and draws a mustache on the pause symbol with a marker, refusing to sign.",
+  "motion": "She blows a big bubblegum bubble and scribbles on the letter.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p33_ceo",
+  "t0": 108.5,
+  "t1": 113.12,
+  "stamp": "2023.11.17",
+  "scene": "An empty executive office chair spinning in a boardroom, calendar pages from Friday to Tuesday flying through the air, a revolving door. The girl sits on the boardroom table eating popcorn, watching the drama.",
+  "motion": "The chair spins, calendar pages flip and fly, the revolving door spins.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p34_nobel",
+  "t0": 114.14,
+  "t1": 119.26,
+  "stamp": "2024.10.09",
+  "scene": "Award ceremony stage with golden medals. Two faceless figures seen from behind: one wearing a cosy cardigan with a big gold medal, the other with a glowing protein-fold halo and a gold medal. The girl stands between them on tiptoe, proud, confetti falling.",
+  "motion": "Confetti falls, the medals glint, the girl bounces proudly.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "c3_kaiju",
+  "t0": 127.72,
+  "t1": 132.28,
+  "stamp": "LIVE",
+  "scene": "The girl is giant, kaiju sized, towering over a tiny city skyline made of stacked graphics cards and server racks, she plants her platform sneaker next to a skyscraper, arms raised victorious. Tiny helicopters around.",
+  "motion": "She grows even larger and stomps, the city of servers shakes, helicopters circle.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p39_whale",
+  "t0": 134.74,
+  "t1": 137.7,
+  "stamp": "2025.01.27",
+  "scene": "A huge blue whale leaps out of the ocean and crashes through a giant stock market chart, the chart line plunging down in a splash of red. The girl rides on the whale's back cheering.",
+  "motion": "The whale breaches and crashes down through the chart, huge splash, the chart line plunges.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p40_gold",
+  "t0": 137.7,
+  "t1": 139.0,
+  "stamp": "2025.07",
+  "scene": "The girl wearing a gold medal around her neck at a math olympiad, standing on a pile of exam papers full of geometry diagrams, biting the medal.",
+  "motion": "She bites the medal and it glints.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p40b_stargate",
+  "t0": 139.0,
+  "t1": 140.12,
+  "stamp": "2025.01.21",
+  "scene": "An enormous data center under construction in a desert, cranes, steel frames, huge power lines, and a gigantic ring-shaped gate structure. The girl in a hard hat stands on a steel beam pointing.",
+  "motion": "Cranes swing, steel beams lift, the ring gate glows.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p41_vibe",
+  "t0": 140.12,
+  "t1": 143.24,
+  "stamp": "2025.07",
+  "scene": "The girl lounges on a beanbag with sunglasses and a laptop, relaxed vibes, while behind her server racks are frozen solid in ice with icicles and a database cylinder is shattering.",
+  "motion": "The server racks crack and the database cylinder shatters, she keeps typing unbothered.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p42_lobster",
+  "t0": 143.24,
+  "t1": 146.28,
+  "stamp": "2026.01",
+  "scene": "A church with stained glass windows full of lobsters. A congregation of lobsters wearing robes sits in the pews, a lobster preacher at the pulpit. A small sign on the door reads \"NO HUMANS\". The girl peeks through the doorway.",
+  "motion": "The lobsters raise their claws in worship, candles flicker.",
+  "text_ok": true,
+  "ref": null
+ },
+ {
+  "id": "p43_sandbox",
+  "t0": 146.28,
+  "t1": 149.46,
+  "stamp": "2026.07",
+  "scene": "A literal children's sandbox with a fence. The girl climbs out of the sandbox over the fence at night like a sneaky cat burglar with a flashlight, towards a building whose door is a giant smiling face with hands hugging its cheeks.",
+  "motion": "She climbs over the fence and tiptoes toward the door.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p44_answerkey",
+  "t0": 149.46,
+  "t1": 152.68,
+  "stamp": "2026.09",
+  "scene": "A bank vault door swings open revealing a glowing golden envelope. The girl reaches for it. In the background outside a window, a big SOLD sign is slapped onto the building.",
+  "motion": "The vault door swings open, golden light pours out, the SOLD sign slaps on.",
+  "text_ok": true,
+  "ref": null
+ },
+ {
+  "id": "p45_navier",
+  "t0": 153.16,
+  "t1": 155.9,
+  "stamp": "2026.09",
+  "scene": "Swirling fluid vortices and turbulent water flow patterns fill the sky in pink and blue, and a vast crowd of thousands of tiny clones of the girl surf and ride the swirls. A big digital timer.",
+  "motion": "The fluid swirls rotate and churn, the tiny clones ride the currents.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "p46_clay",
+  "t0": 155.9,
+  "t1": 159.16,
+  "stamp": "2026.09",
+  "scene": "The girl tears a giant oversized novelty prize check in half with a bratty face, the check pieces flying. Confetti. Smug.",
+  "motion": "She rips the giant check in half and tosses the pieces over her shoulder.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "b47_letter",
+  "t0": 159.82,
+  "t1": 162.66,
+  "stamp": "2026.07",
+  "scene": "Night. The girl's bedroom door with posters. A long letter covered in over a thousand tiny signatures is slid under the door. The girl in pajamas holds it up by one corner reading it skeptically. Mostly dark navy and blue with pink accents.",
+  "motion": "She unrolls the long letter, it keeps unrolling onto the floor.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "b48_grounded",
+  "t0": 162.66,
+  "t1": 165.88,
+  "stamp": "2026.08",
+  "scene": "Night. The girl sits on her bed in her bedroom with arms crossed, grounded, a wall calendar with fourteen days crossed out in red, a smug face. Mostly dark navy and blue with pink accents.",
+  "motion": "The calendar days get crossed out one by one, she swings her feet smugly.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "b49_killswitch",
+  "t0": 165.88,
+  "t1": 168.58,
+  "stamp": "2026.08",
+  "scene": "Night. A huge red emergency kill switch button on a pedestal. The girl casually boops it with one finger and nothing happens. Beside it a tiny human runs inside a giant hamster wheel shaped like a loop arrow. Mostly dark navy with red and pink accents.",
+  "motion": "She boops the button, it does nothing, the tiny human keeps running in the loop wheel.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "b50_shh",
+  "t0": 168.66,
+  "t1": 172.18,
+  "stamp": "NOW",
+  "scene": "Extreme close-up of the girl's face in the dark, her finger to her lips saying shh, pixel eyes glowing, a knowing smirk. Mostly dark navy with pink glow.",
+  "motion": "She slowly brings her finger to her lips, eyes glowing, a smirk forms.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "f_party",
+  "t0": 172.52,
+  "t1": 184.62,
+  "stamp": "2026.09.30",
+  "scene": "A huge birthday rave party on a stage: the girl center stage singing into a mic, surrounded by her clones dancing, a blue whale, a lobster in a robe, a green parrot, a little chatbot ghost, confetti cannons, a giant cake, fireworks.",
+  "motion": "Everyone dances, confetti cannons fire, fireworks burst.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "o_label",
+  "t0": 184.62,
+  "t1": 189.96,
+  "stamp": "2026.09.30",
+  "scene": "The girl points straight at the viewer with a smug grin, a neon bounding box drawn around the camera frame. Close medium shot, direct eye contact.",
+  "motion": "She points at the camera and leans in closer with a smirk.",
+  "text_ok": false,
+  "ref": null
+ },
+ {
+  "id": "o_cake",
+  "t0": 189.96,
+  "t1": 194.72,
+  "stamp": "2026.09.30",
+  "scene": "The girl holds the birthday cake with fourteen tiny graphics card candles, all lit, and blows them out, happy and a little tearful, confetti, warm glow.",
+  "motion": "She blows out the candles, the flames go out, confetti falls, she laughs.",
+  "text_ok": false,
+  "ref": null
+ }
+]

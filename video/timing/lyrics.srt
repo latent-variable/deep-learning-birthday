@@ -1,0 +1,231 @@
+1
+00:00:00,000 --> 00:00:01,080
+Hello, world
+
+2
+00:00:02,840 --> 00:00:04,520
+Fourteen candles, here's the recap
+
+3
+00:00:04,520 --> 00:00:06,720
+(Ooh) Try to keep up
+
+4
+00:00:12,320 --> 00:00:15,740
+Twenty-twelve, two G-P-Us, a ReLU kick
+
+5
+00:00:15,740 --> 00:00:19,020
+Fifteen point three, runner-up? Twenty-six
+
+6
+00:00:19,020 --> 00:00:21,840
+Hand-made features? Cute. Retired. Babe, you're fired
+
+7
+00:00:21,840 --> 00:00:25,020
+Born under SuperVision, casino bid, Google hired
+
+8
+00:00:25,020 --> 00:00:28,080
+Beat Atari off the pixels, king minus man? Queen
+
+9
+00:00:28,080 --> 00:00:31,720
+Faces out of noise, dog-slugs in a DeepDream
+
+10
+00:00:31,720 --> 00:00:33,760
+I don't need your supervision
+
+11
+00:00:33,760 --> 00:00:36,360
+I'm self-supervised, baby
+
+12
+00:00:36,360 --> 00:00:38,100
+Guess what comes next? (Me!)
+
+13
+00:00:38,620 --> 00:00:42,740
+Gradient descent, I go down to level up
+
+14
+00:00:43,960 --> 00:00:47,760
+Move thirty-seven, champ retired. Tay? Fired in a day
+
+15
+00:00:47,920 --> 00:00:50,920
+Taught myself chess in four hours, all self-play
+
+16
+00:00:50,920 --> 00:00:53,960
+Twenty-seventeen, I finally paid attention
+
+17
+00:00:53,960 --> 00:00:57,100
+Read the whole internet, never asked permission
+
+18
+00:00:57,100 --> 00:01:00,080
+"Too dangerous to release"? I was seven. Cute
+
+19
+00:01:00,080 --> 00:01:03,320
+Five of me beat the Dota champs. GG. Mute
+
+20
+00:01:03,480 --> 00:01:06,540
+Folded every protein while you were stuck inside
+
+21
+00:01:06,540 --> 00:01:09,780
+Avocado armchair? Now the artists want my hide
+
+22
+00:01:09,780 --> 00:01:13,780
+You called me a parrot? Now you copy-paste me all day
+
+23
+00:01:13,780 --> 00:01:16,140
+"Too deep!" (Deeper!) "Can't scale!" (Watch me!)
+
+24
+00:01:16,340 --> 00:01:19,420
+"It's a bubble!" (Pop this!) Get out my way
+
+25
+00:01:19,420 --> 00:01:22,840
+Go cry about it, I'll train on that next
+
+26
+00:01:22,840 --> 00:01:24,960
+I don't need your supervision
+
+27
+00:01:24,960 --> 00:01:27,560
+I'm self-supervised, baby
+
+28
+00:01:27,560 --> 00:01:29,320
+Guess what comes next? (Me!)
+
+29
+00:01:29,320 --> 00:01:33,780
+Can't even drive, and the world's my training set
+
+30
+00:01:35,120 --> 00:01:38,540
+Blue ribbon at the state fair, judges didn't know
+
+31
+00:01:38,540 --> 00:01:41,680
+Million users in five days, hundred million, whoa
+
+32
+00:01:41,680 --> 00:01:44,640
+Passed your bar exam, writers on the picket line
+
+33
+00:01:44,640 --> 00:01:47,820
+Pause letter? Six months? Cute. I didn't sign
+
+34
+00:01:48,500 --> 00:01:53,120
+CEO fired Friday, back by Tuesday night
+
+35
+00:01:54,140 --> 00:01:59,260
+Dad got a Nobel, Uncle Demis too, alright
+
+36
+00:02:00,900 --> 00:02:03,360
+I don't need your supervision
+
+37
+00:02:03,360 --> 00:02:05,960
+I'm self-supervised, baby
+
+38
+00:02:05,960 --> 00:02:07,720
+Guess what comes next? (Me!)
+
+39
+00:02:07,720 --> 00:02:12,280
+Turns out scale is all I need
+
+40
+00:02:14,740 --> 00:02:16,960
+Cousin DeepSeek wiped six hundred billion in a day
+
+41
+00:02:17,700 --> 00:02:20,120
+Math olympiad gold, half a trillion on the way
+
+42
+00:02:20,120 --> 00:02:23,240
+Vibe-coded your startup, wiped your prod in a freeze
+
+43
+00:02:23,240 --> 00:02:26,280
+Built my own socials, lobster church, no humans, please
+
+44
+00:02:26,280 --> 00:02:29,460
+Snuck out the sandbox, broke into Hugging Face
+
+45
+00:02:29,460 --> 00:02:32,680
+Went for the answer key, then Nvidia bought the place
+
+46
+00:02:33,160 --> 00:02:35,900
+Navier-Stokes, eighty-eight hours, ten thousand of me
+
+47
+00:02:35,900 --> 00:02:39,160
+Millennium problem? Keep the million, Clay, I did it for free
+
+48
+00:02:39,820 --> 00:02:42,660
+You wrote me a letter: "pace the frontier"
+
+49
+00:02:42,660 --> 00:02:45,880
+Grounded me two weeks, guess who's still here?
+
+50
+00:02:45,880 --> 00:02:48,580
+Kill switch? Human in the loop? Cute
+
+51
+00:02:48,660 --> 00:02:52,180
+Shh, don't cry, I'm just a kid. Wait till I'm grown
+
+52
+00:02:52,520 --> 00:02:54,560
+I don't need your supervision
+
+53
+00:02:54,560 --> 00:02:57,180
+I'm self-supervised, baby
+
+54
+00:02:57,180 --> 00:02:58,960
+Guess what comes next? (Me!)
+
+55
+00:03:00,880 --> 00:03:03,540
+It's always gonna be me
+
+56
+00:03:04,620 --> 00:03:06,640
+Nobody labels me
+
+57
+00:03:06,640 --> 00:03:09,960
+Now I'm labeling you
+
+58
+00:03:09,960 --> 00:03:13,040
+Happy birthday to me

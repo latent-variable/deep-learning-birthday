@@ -1,0 +1,15 @@
+checkpoint_dir = 'C:\AI\deep-learning-birthday\models\ACE-Step'
+config_path = 'acestep-v15-xl-sft'
+lm_model_path = 'acestep-5Hz-lm-4B'
+save_dir = 'C:\AI\deep-learning-birthday\music\renders\acestep-xlsft-4b-v2'
+audio_format = 'flac'
+caption = '''Upbeat modern synth-pop anthem, euphoric and nostalgic, bright analog synth bass, punchy drums with big claps, shimmering arpeggiated synths, clear powerful lead vocal with crisp enunciation, stacked gang vocals and oh-oh sing-along hooks in the chorus, catchy call-and-response post-chorus, stripped-back piano and pads in the bridge, explosive final chorus, polished radio-ready production'''
+lyrics = 'C:\AI\deep-learning-birthday\music\lyrics\look-what-we-see-now-v2.acestep.txt'
+vocal_language = 'en'
+duration = 240.0
+bpm = 118
+batch_size = 4
+thinking = true
+inference_steps = 50
+guidance_scale = 7.0
+use_random_seed = true

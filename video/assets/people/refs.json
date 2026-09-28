@@ -1,0 +1,50 @@
+{
+ "krizhevsky": {
+  "file": null,
+  "thumb": null
+ },
+ "hassabis": {
+  "file": "Demis_Hassabis,_2024_Nobel_Prize_Laureate_in_Chemistry_7_(cropped).jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg/1280px-Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ "feifei": {
+  "file": "Fei-Fei_Li_at_AI_for_Good_2017.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "hinton": {
+  "file": "Geoffrey_Hinton_in_2026.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Geoffrey_Hinton_in_2026.jpg/1280px-Geoffrey_Hinton_in_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ "goodfellow": {
+  "file": "Ian_Goodfellow.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Ian_Goodfellow.jpg/1280px-Ian_Goodfellow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ "sutskever": {
+  "file": "Ilya_Sutskever_and_Sam_Altman_in_TAU_(cropped).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Ilya_Sutskever_and_Sam_Altman_in_TAU_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "jensen": {
+  "file": "Jen-Hsun_Huang_2025.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Jen-Hsun_Huang_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "jumper": {
+  "file": "John_M._Jumper_presenting_his_Nobel_Lecture_at_the_2024_Nobel_Prizes.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/John_M._Jumper_presenting_his_Nobel_Lecture_at_the_2024_Nobel_Prizes.jpg/1280px-John_M._Jumper_presenting_his_Nobel_Lecture_at_the_2024_Nobel_Prizes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ "leesedol": {
+  "file": "Lee_Se-Dol_-_2016_(cropped).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/25/Lee_Se-Dol_-_2016_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "altman": {
+  "file": "Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "lecun": {
+  "file": "Laura_Chaubard_&_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/1280px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ "bengio": {
+  "file": "ICLR_2025_-_Yoshua_Bengio_02.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/1280px-ICLR_2025_-_Yoshua_Bengio_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ }
+}
