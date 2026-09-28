@@ -33,6 +33,10 @@ PLATES = {
  'p04_podium': (f"Scene: a winners podium under stadium spotlights. {LEXI} stands on the tall first place block holding up a big trophy, smug; on the right beside the podium a woman "
    "with shoulder-length dark hair in a dark blazer applauds proudly like her teacher. On the much lower second place block a clunky old boxy robot made of arrows and histograms slumps.",
    [('feifei', 'the woman applauding on the right')]),
+ 'c_lino': (f"Scene: a joyful birthday stage with confetti, streamers and a big cake in the background. On the right, {LEXI} leaps up mid-dance and gives a big "
+   "high five to a man on the left: a man in his thirties with short dark wavy hair, round wire glasses, a mustache and short beard, wearing a colorful short-sleeve "
+   "button shirt covered in a pattern of little cartoon cats, laughing and dancing. Their palms meet in the center with a burst of sparkles. Both full body, energetic dance poses.",
+   [('lino', 'the man with round glasses on the left')]),
  'p30_users': (f"Scene: a hillside at night with an endless queue of tiny happy people lining up toward a giant glowing chat bubble. {LEXI} sits cross-legged on top of the "
    "chat bubble with both legs tucked in naturally, waving to the crowd, delighted and overwhelmed. Exactly one girl in the whole image. Natural anatomy, no stretched limbs.", []),
 }

@@ -20,7 +20,7 @@
     }],
     // ---- Fourteen candles, here's the recap / (Ooh) try to keep up → she blows them out ----
     [2.84, async (t, lt, dur) => {
-      await plateOrClip('p01_candles', lt, dur, { cam0: { z: 1.02, y: .45 }, cam1: { z: 1.2, y: .5 } });
+      await plateOrClip('p01_candles', lt, dur, { cam0: { z: 1.0, y: .4 }, cam1: { z: 1.08, y: .45 } });
       confetti(I, t, 2.9, 60, { seed: 'c1' });
       const L1 = 1, L2 = 2;
       const row = (words, y, size, until) => { const ws = words.map(([w]) => measure(S, w, size)), sp = size * .25, tot = ws.reduce((a, b) => a + b, 0) + sp * (words.length - 1); let x = W / 2 - tot / 2;

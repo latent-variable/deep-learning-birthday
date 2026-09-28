@@ -6,6 +6,7 @@ const CLIPS = {
   'c3_kaiju': 121,
   'c_chains': 121,
   'c_clones': 121,
+  'c_lino': 121,
   'c_ski': 121,
   'c_stage': 121,
   'f_party': 121,

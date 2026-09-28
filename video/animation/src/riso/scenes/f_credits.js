@@ -24,8 +24,14 @@ const SONG_END = 194.72;
       header(t, 'MADE BY', C + 1.0);
       credit(t, 140, 420, 'Lino Valdovinos', 'human · director', C + 1.3, { size: 96 });
       credit(t, 140, 650, 'Claude Opus 5.5', 'ai · co-creator', C + 1.75, { size: 96, bc: INK.blue, score: .99 });
-      text(S, 'lyrics · storyboard · code · animation engine · edit', 160, 760, { size: 32, font: F.mono, align: 'left', col: INK.blue, alpha: seg(t, C + 2.0, C + 2.2) });
-      sticker(await SAFE(STK('pose_1')), 1540, 600, 760, { k: backOut(seg(t, C + 1.1, C + 1.4)), rot: -.04 });
+      text(S, 'lyrics · storyboard · code · animation · edit', 160, 760, { size: 25, font: F.mono, align: 'left', col: INK.blue, alpha: seg(t, C + 2.0, C + 2.2) });
+      // the director and the star, mid high-five — pasted in like a print
+      const k = backOut(seg(t, C + 1.05, C + 1.35)), img = CLIPS['c_lino'] ? await FRAME('c_lino', t - C - 1.0) : await SAFE(PL('c_lino'));
+      I.save(); I.translate(1390, 560); I.rotate(.035); I.scale(k, k);
+      I.fillStyle = INK.navy; I.fillRect(-470 + 16, -300 + 18, 940, 600); I.fillStyle = INK.paper; I.fillRect(-470, -300, 940, 600);
+      I.drawImage(img, -450, -280, 900, 506); I.restore();
+      bbox(1000, 300, 300, 330, 'lino', 1.0, t - C - 1.6, { col: INK.yellow, txt: INK.navy, size: 24, lw: 5 });
+      bbox(1370, 290, 330, 440, 'lexi', .99, t - C - 1.8, { col: INK.pink, size: 24, lw: 5 });
     }, { tin: ['reprint', 0], c1: INK.yellow, c2: INK.pink }],
     [C + 3.4, async (t, lt) => {
       header(t, 'STARRING', C + 3.45, INK.blue);
