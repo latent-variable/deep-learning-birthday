@@ -6,7 +6,8 @@ const SONG_END = 194.72;
   const PHOTOS = [['geoffrey hinton', 'Cmichel67', 'CC BY-SA 4.0'], ['demis hassabis', 'John Sears', 'CC BY-SA 4.0'], ['fei-fei li', 'ITU Pictures', 'CC BY 2.0'],
     ['yann lecun', 'Jérémy Barande', 'CC BY-SA 2.0'], ['yoshua bengio', 'Xuthoria', 'CC BY-SA 4.0'], ['jensen huang', 'The White House', 'public domain'],
     ['lee sedol', 'LG Electronics', 'CC BY 2.0'], ['sam altman', "PM's Office of Japan", 'CC BY 4.0'], ['ian goodfellow', 'Ian Goodfellow', 'CC BY-SA 4.0'],
-    ['john jumper', 'Jay Dixit', 'CC BY-SA 4.0']];
+    ['john jumper', 'Jay Dixit', 'CC BY-SA 4.0'], ['gary marcus', 'Web Summit', 'CC BY 2.0'], ['noam chomsky', 'Σ · Wugapodes · Jonnmann', 'CC BY-SA 4.0'],
+    ['emily m. bender', 'King of Hearts', 'CC BY-SA 4.0']];
   // one credit line: text + a detection box snapping around it
   function credit(t, x, y, name, label, t0, o = {}) {
     const a = t - t0; if (a < 0) return;
@@ -67,9 +68,9 @@ const SONG_END = 194.72;
     [C + 12.7, async (t, lt) => {
       header(t, 'PHOTO REFERENCES', C + 12.75, INK.blue);
       text(S, 'portraits redrawn from Wikimedia Commons photos:', 140, 320, { size: 34, font: F.mono, align: 'left', col: INK.navy });
-      PHOTOS.forEach(([who, by, lic], i) => { const x = 140 + (i % 2) * 860, y = 400 + Math.floor(i / 2) * 64;
+      PHOTOS.forEach(([who, by, lic], i) => { const x = 140 + (i % 2) * 860, y = 390 + Math.floor(i / 2) * 52;
         text(S, `${who} — ${by} (${lic})`, x, y, { size: 26, font: F.mono, align: 'left', col: i % 2 ? INK.blue : INK.navy, alpha: seg(t, C + 12.9 + i * .05, C + 13.1 + i * .05) }); });
-      text(S, 'ilya sutskever — reference photo supplied by the director', 140, 400 + 5 * 64, { size: 28, font: F.mono, align: 'left', col: INK.navy, alpha: seg(t, C + 13.4, C + 13.6) });
+      text(S, 'ilya sutskever — reference photo supplied by the director', 140, 390 + 7 * 52, { size: 28, font: F.mono, align: 'left', col: INK.navy, alpha: seg(t, C + 13.4, C + 13.6) });
       text(S, 'logos and names belong to their owners — a tribute, not an endorsement', 140, 860, { size: 44, font: F.serif, style: 'italic', align: 'left', col: INK.pink, alpha: seg(t, C + 13.6, C + 13.8) });
     }, { tin: ['dots', .3] }],
     [C + 14.7, async (t, lt) => {

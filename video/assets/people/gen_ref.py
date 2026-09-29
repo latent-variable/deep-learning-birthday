@@ -8,7 +8,7 @@ PROMPT = ("Redraw the person from <image1> as a risograph print portrait illustr
 SOLO = '--solo' in sys.argv
 if SOLO:
     PROMPT = PROMPT.replace(' in the exact art style of <image2>', '').replace(' Copy ONLY the drawing style and colors from <image2>, never its person or clothes.', '')
-EXTRA = {'jensen': ' He wears his signature black leather jacket over a black t-shirt.', 'sutskever': ' Close-up head and shoulders portrait.', 'hinton': ' Warm gentle smile.', 'feifei': ' Her face is smooth and softly lit with light, even shading; no dark marks, stubble or shadow anywhere around her mouth, jaw or chin.'}
+EXTRA = {'marcus': ' Close-up head and shoulders portrait, facing the viewer.', 'jensen': ' He wears his signature black leather jacket over a black t-shirt.', 'sutskever': ' Close-up head and shoulders portrait.', 'hinton': ' Warm gentle smile.', 'feifei': ' Her face is smooth and softly lit with light, even shading; no dark marks, stubble or shadow anywhere around her mouth, jaw or chin.'}
 for k in ([a for a in sys.argv[1:] if a != '--solo'] or sorted(p.stem for p in (HERE/'refs').glob('*.jpg'))):
     (HERE / 'ref_prompt.txt').write_text(PROMPT + EXTRA.get(k, ''), encoding='utf-8')
     subprocess.run([PY, str(ROOT/'scripts/comfy_run.py'), str(ROOT/'video/workflows/qwen21_edit_api.json'), '--set', f'10.image=@{HERE/"refs"/(k+".jpg")}',

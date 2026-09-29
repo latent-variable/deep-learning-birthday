@@ -59,7 +59,8 @@ PRINT SHOP: p5.js · Puppeteer · FFmpeg · librosa · ClaudeAnimationBase by Jo
 Portraits redrawn from Wikimedia Commons photos:
 Geoffrey Hinton (Cmichel67, CC BY-SA 4.0) · Demis Hassabis (John Sears, CC BY-SA 4.0) · Fei-Fei Li (ITU Pictures, CC BY 2.0) ·
 Yann LeCun (Jérémy Barande, CC BY-SA 2.0) · Yoshua Bengio (Xuthoria, CC BY-SA 4.0) · Jensen Huang (The White House, public domain) ·
-Lee Sedol (LG Electronics, CC BY 2.0) · Sam Altman (Office of the Prime Minister of Japan, CC BY 4.0) · Ian Goodfellow (CC BY-SA 4.0) · John Jumper (Jay Dixit, CC BY-SA 4.0)
+Lee Sedol (LG Electronics, CC BY 2.0) · Sam Altman (Office of the Prime Minister of Japan, CC BY 4.0) · Ian Goodfellow (CC BY-SA 4.0) · John Jumper (Jay Dixit, CC BY-SA 4.0) ·
+Gary Marcus (Web Summit, CC BY 2.0) · Noam Chomsky (Σ, retouched by Wugapodes & Jonnmann, CC BY-SA 4.0) · Emily M. Bender (King of Hearts, CC BY-SA 4.0)
 
 Logos and names belong to their owners. This is a fan tribute, not an endorsement.
 For Alex, Ilya & Geoff, and everyone who labeled ImageNet.

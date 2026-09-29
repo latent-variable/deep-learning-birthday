@@ -43,7 +43,7 @@
  },
  "lecun": {
   "file": "Laura_Chaubard_&_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
-  "author": "J\u00e9r\u00e9my Barande",
+  "author": "Jérémy Barande",
   "license": "CC BY-SA 2.0",
   "url": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_&_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg"
  },
@@ -55,8 +55,26 @@
  },
  "altman": {
   "file": "Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg",
-  "author": "\u9996\u76f8\u5b98\u90b8\u30db\u30fc\u30e0\u30da\u30fc\u30b8 / Office of the Prime Minister of Japan Official Website",
+  "author": "首相官邸ホームページ / Office of the Prime Minister of Japan Official Website",
   "license": "CC BY 4.0",
   "url": "https://commons.wikimedia.org/wiki/File:Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg"
+ },
+ "marcus": {
+  "file": "Gary_Marcus_at_Web_Summit_2022.jpeg",
+  "author": "Web Summit",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Gary_Marcus_at_Web_Summit_2022.jpeg"
+ },
+ "chomsky": {
+  "file": "Noam_Chomsky_portrait_2017_retouched.jpg",
+  "author": "Σ, retouched by Wugapodes and Jonnmann",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Noam_Chomsky_portrait_2017_retouched.jpg"
+ },
+ "bender": {
+  "file": "Emily_M_Bender_CHM_Mountain_View_March_2025.jpg",
+  "author": "King of Hearts",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Emily_M_Bender_CHM_Mountain_View_March_2025.jpg"
  }
 }

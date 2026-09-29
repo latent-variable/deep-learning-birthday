@@ -66,7 +66,15 @@ const EGGS = [
   [60.1, 63.3, async (t, a) => { await logo('openai', 220, 190, 120, a - .2); text(S, 'OpenAI Five 2 – 0 OG · TI8 champs', 520, 330, { size: 30, font: F.mono, col: INK.paper, knock: 0, alpha: seg(a, .4, .6) }); }],
   [63.5, 66.5, async (t, a) => { await logo('deepmind', 1680, 880 - 80, 120, a - .8); text(S, 'AlphaFold 2 · CASP14 · GDT 92.4', 1480, 770 - 90, { size: 30, font: F.mono, col: INK.navy, knock: 8, alpha: seg(a, 1, 1.2) }); }],
   [66.6, 69.7, async (t, a) => { await logo('openai', 1660, 900 - 110, 110, a - .4); text(S, 'DALL·E · Jan 2021', 1660, 980 - 110 - 70, { size: 28, font: F.mono, col: INK.navy, knock: 8, alpha: seg(a, .6, .8) }); }],
-  [69.9, 73.7, (t, a) => cite(1180, 60, ['On the Dangers of Stochastic Parrots 🦜', 'Bender · Gebru · McMillan-Major · Mitchell · 2021'], a - 1.0, { w: 720 })],
+  // the loudest skeptics, each on the line that answers them (with what they actually published or said)
+  [69.9, 73.7, async (t, a) => { const tp = wt(21, 'parrot'), tc = wt(21, 'copy');
+    await face('bender', 1730, 330, 250, t - tp); tag(1600, 205, 260, 250, 'emily_m_bender', t - tp - .1, { col: INK.yellow, size: 22 });
+    cite(1150, 500, ['On the Dangers of Stochastic Parrots 🦜', 'Bender · Gebru · McMillan-Major · Mitchell · 2021'], t - tp - .2, { w: 750 });
+    await face('chomsky', 250, 690, 250, t - tc); tag(120, 560, 260, 260, 'noam_chomsky', t - tc - .1, { col: INK.pink, txt: INK.paper, size: 22, below: true });
+    cite(400, 610, ['"basically high-tech plagiarism"', 'Noam Chomsky · on ChatGPT · 2023'], t - tc - .2, { w: 560, rot: .03 }); }],
+  [73.8, 76.1, async (t, a) => { const tk = wt(22, "can't");
+    await face('marcus', 1625, 470, 230, t - tk); tag(1505, 350, 240, 250, 'gary_marcus', t - tk - .1, { col: INK.yellow, size: 22, below: true });
+    cite(1290, 700, ['Deep Learning Is Hitting a Wall', 'Gary Marcus · Nautilus · March 2022'], t - tk - .2, { w: 560, rot: -.02 }); }],
   // ---- verse 3 ----
   [95.2, 98.5, async (t, a) => { await logo('midjourney', 1640, 850 - 80, 120, a - .5); text(S, '"Théâtre D\'opéra Spatial" · Colorado State Fair 2022', W / 2, 870 - 20, { size: 30, font: F.serif, style: 'italic', col: INK.navy, knock: 8, alpha: seg(a, .8, 1) }); }],
   [98.6, 101.6, async (t, a) => await logo('chatgpt', 1750, 760, 160, a - .1)],
