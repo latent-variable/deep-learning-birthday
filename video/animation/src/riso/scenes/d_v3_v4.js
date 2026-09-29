@@ -94,9 +94,9 @@
     // ================= VERSE 4 =================
     // Cousin DeepSeek wiped six hundred billion in a day
     [134.6, async (t, lt, dur) => {
-      await plateOrClip('p39_whale', lt, dur, { cam0: { z: 1.2 }, cam1: { z: 1.02 }, ease: easeOut });
+      await plateOrClip('p39_whale', lt, dur, { cam0: { z: 1.14, y: 0 }, cam1: { z: 1.0, y: 0 }, ease: easeOut });
       const L = 39, tw = wt(L, 'wiped');
-      bbox(40, 450, 1240, 500, 'cousin_deepseek', .98, t - wt(L, 'Cousin'), { col: INK.blue });
+      bbox(20, 400, 1500, 540, 'cousin_deepseek', .98, t - wt(L, 'Cousin'), { col: INK.blue });
       // the chart plunges
       if (t > tw - .3) { panel(1260, 90, 580, 330, 'chart', t); const pts = []; for (let i = 0; i <= 24; i++) { const x = i / 24; pts.push([1290 + x * 520, 150 + (x < .7 ? 40 * Math.sin(x * 20) * .3 + 20 * x : 20 + (x - .7) / .3 * 230)]); }
         scribble(S, pts, INK.pink, 9, t, 'crash', seg(t, tw - .3, tw + .4));

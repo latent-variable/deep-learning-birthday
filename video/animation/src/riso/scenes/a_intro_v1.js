@@ -73,16 +73,17 @@
     [15.74, async (t, lt, dur) => {
       await plateOrClip('p04_podium', lt, dur, { cam0: { z: 1.05 }, cam1: { z: 1.0 } });
       tag(1130, 335, 190, 215, 'fei-fei_li', t - 16.1, { col: INK.yellow, size: 28 });
-      const L = 4, t15 = wt(L, 'Fifteen'), t26 = wt(L, 'Twenty'), sc = 20;
+      const L = 4, t15 = wt(L, 'Fifteen'), t26 = wt(L, 'Twenty'), sc = 17;
       if (t < 17.8) bbox(840, 415, 160, 135, 'jersey: 15.3% err', null, t - wt(L, 'point'), { col: INK.pink, size: 24, lw: 5 });   // until she hops up
-      const gx = 90, gy = 900, hk = easeOut(seg(t, t15, t15 + .45)), hk2 = easeOut(seg(t, t26, t26 + .5));
+      // the race chart fits the empty stage left of her (she and the trophy start at x ≈ 600)
+      const gx = 30, gy = 900, hk = easeOut(seg(t, t15, t15 + .45)), hk2 = easeOut(seg(t, t26, t26 + .5));
       if (t > t15 - .05) {
-        S.fillStyle = INK.paper; roughRect(S, gx - 40, 190, 620, gy - 130, t, 'ch', 3); S.fill(); S.strokeStyle = INK.navy; S.lineWidth = 4; roughRect(S, gx - 40, 190, 620, gy - 130, t, 'ch', 3); S.stroke();
-        text(S, 'top-5 error · lower wins', gx - 10, 232, { size: 30, font: F.mono, align: 'left', col: INK.navy });
-        inkBar(S, gx + 30, gy - 40, 220, 15.3 * sc * hk, INK.pink, t, 'b1'); text(S, 'me', gx + 140, gy - 5, { size: 40, font: F.pixel, col: INK.navy });
-        bigNum(t, '15.3', gx + 140, gy - 40 - 15.3 * sc * hk - 70, 110, INK.pink, t15);
-        if (hk2 > 0) { inkBar(S, gx + 300, gy - 40, 220, 26.2 * sc * hk2, INK.blue, t, 'b2'); text(S, 'runner-up', gx + 410, gy - 5, { size: 30, font: F.pixel, col: INK.navy });
-          bigNum(t, '26.2', gx + 410, Math.max(300, gy - 40 - 26.2 * sc * hk2 - 60), 90, INK.blue, t26); }
+        S.fillStyle = INK.paper; roughRect(S, gx - 20, 250, 490, gy - 170, t, 'ch', 3); S.fill(); S.strokeStyle = INK.navy; S.lineWidth = 4; roughRect(S, gx - 20, 250, 490, gy - 170, t, 'ch', 3); S.stroke();
+        text(S, 'top-5 error · lower wins', gx + 225, 288, { size: 24, font: F.mono, col: INK.navy });
+        inkBar(S, gx + 20, gy - 40, 170, 15.3 * sc * hk, INK.pink, t, 'b1'); text(S, 'me', gx + 105, gy - 5, { size: 36, font: F.pixel, col: INK.navy });
+        bigNum(t, '15.3', gx + 105, gy - 40 - 15.3 * sc * hk - 60, 96, INK.pink, t15);
+        if (hk2 > 0) { inkBar(S, gx + 240, gy - 40, 170, 26.2 * sc * hk2, INK.blue, t, 'b2'); text(S, 'runner-up', gx + 325, gy - 5, { size: 26, font: F.pixel, col: INK.navy });
+          bigNum(t, '26.2', gx + 325, Math.max(350, gy - 40 - 26.2 * sc * hk2 - 55), 84, INK.blue, t26); }
       }
       text(S, 'runner-up?', 1560, 330, { size: 80, font: F.serif, style: 'italic', col: INK.navy, knock: 12, alpha: seg(t, wt(L, 'runner') - .05, wt(L, 'runner') + .1), rot: -.06 });
     }, { tin: ['slide', .3], tag: '2012.10 · imagenet' }],

@@ -75,7 +75,7 @@ const EGGS = [
   [108.6, 113.1, async (t, a) => { await logo('openai', 150, 830, 110, a - .3); tag(240, 190, 260, 330, 'sam_altman · ceo?', a - .4, { col: INK.pink, txt: INK.paper, score: .5 }); }],
   // 113.2–120.8: the Nobel medals are part of the shot itself (d_v3_v4.js)
   // ---- verse 4 ----
-  [134.7, 137.6, async (t, a) => { await logo('deepseek', 300, 170, 110, a - .3); await logo('nvidia', 1560, 470, 90, a - 1.3); text(S, 'NVDA −17% · Jan 27, 2025', 1560, 540, { size: 26, font: F.mono, col: INK.pink, knock: 6, alpha: seg(a, 1.4, 1.6) }); }],
+  [134.7, 137.6, async (t, a) => { await logo('deepseek', 190, 170, 100, a - .3); await logo('nvidia', 1560, 470, 90, a - 1.3); text(S, 'NVDA −17% · Jan 27, 2025', 1560, 540, { size: 26, font: F.mono, col: INK.pink, knock: 6, alpha: seg(a, 1.4, 1.6) }); }],
   [137.65, 139.0, async (t, a) => { await logo('deepmind', 260, 180, 110, a - .1); await logo('openai', 260, 330, 110, a - .25); text(S, 'IMO 2025 · 35/42', 260, 440, { size: 30, font: F.mono, col: INK.navy, knock: 8 }); }],
   [139.05, 140.1, async (t, a) => { await logo('openai', 260, 180, 100, a - .1); text(S, 'Stargate · OpenAI × SoftBank × Oracle', 520, 330, { size: 28, font: F.mono, col: INK.paper, alpha: seg(a, .2, .4) }); }],
   [140.2, 143.2, async (t, a) => await logo('replit', 250, 170, 120, a - .3)],
