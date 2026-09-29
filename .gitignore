@@ -45,3 +45,6 @@ video/assets/people/pfp/
 # the song is Suno's (free tier: personal, non-commercial use only), so it isn't distributed here; bring your own track
 /music/final/*.mp3
 /video/animation/assets/song_credits.m4a
+
+# personal release planning (kept local)
+/video/RELEASE_KIT.md
