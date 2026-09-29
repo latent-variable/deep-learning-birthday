@@ -24,6 +24,7 @@ const SONG_END = 194.72;
     [C + .95, async (t, lt) => {
       header(t, 'MADE BY', C + 1.0);
       credit(t, 140, 420, 'Lino Valdovinos', 'human · director', C + 1.3, { size: 96 });
+      text(S, 'github.com/latent-variable', 160, 522, { size: 30, font: F.mono, align: 'left', col: INK.pink, alpha: seg(t, C + 1.55, C + 1.75) });
       credit(t, 140, 650, 'Claude Opus 5.5', 'ai · co-creator', C + 1.75, { size: 96, bc: INK.blue, score: .99 });
       text(S, 'lyrics · storyboard · code · animation · edit', 160, 760, { size: 25, font: F.mono, align: 'left', col: INK.blue, alpha: seg(t, C + 2.0, C + 2.2) });
       // the director and the star, mid high-five — pasted in like a print
@@ -80,7 +81,8 @@ const SONG_END = 194.72;
       text(S, '2012.09.30 → 2026.09.30', W / 2, 700, { size: 48, font: F.mono, col: INK.pink, alpha: seg(a, 1.0, 1.3) });
       bbox(W / 2 - 520, 300, 1040, 280, 'thank you', 1.0, a - 1.3, { col: INK.pink, size: 34, lw: 8 });
       text(S, 'make your own → github.com/latent-variable/deep-learning-birthday', W / 2, 860, { size: 32, font: F.mono, col: INK.paper, alpha: seg(a, 1.5, 1.8) });
-      if (t > DUR - .3) { POST.flash = seg(t, DUR - .3, DUR); POST.flashCol = INK.navy; }
+      // hold so the repo line can be read, then fade to black
+      if (t > DUR - 1.2) { POST.flash = easeInOut(seg(t, DUR - 1.2, DUR - .1)); POST.flashCol = '#000000'; }
     }, { tin: ['iris', .5] }],
   ];
   shots(cards.map(([t0, fn, o]) => [t0, async (t, lt, dur) => { await fn(t, lt, dur); }, o]));

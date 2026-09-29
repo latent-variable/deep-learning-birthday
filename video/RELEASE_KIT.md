@@ -4,9 +4,9 @@
 
 | Where | File | Why |
 |---|---|---|
-| **YouTube** | `final/happy-birthday-to-me-v11-master.mp4` (1.08 GB) | YouTube re-encodes everything, so give it the highest-quality source. The master isn't uncompressed; it's H.264 CRF 20 with 320k AAC. |
-| **Reddit native upload**, Discord (Nitro), email/Drive links | `final/happy-birthday-to-me-v11.mp4` (323 MB, 1080p, 12 Mbps) | Looks the same to the eye at a third of the size. |
-| Texting friends, WhatsApp, Discord (free), previews | `final/happy-birthday-to-me-v11-720p.mp4` (151 MB) | Small enough for most messengers. |
+| **YouTube** | `final/happy-birthday-to-me-v12-master.mp4` (1.08 GB) | YouTube re-encodes everything, so give it the highest-quality source. The master isn't uncompressed; it's H.264 CRF 20 with 320k AAC. |
+| **Reddit native upload**, Discord (Nitro), email/Drive links | `final/happy-birthday-to-me-v12.mp4` (323 MB, 1080p, 12 Mbps) | Looks the same to the eye at a third of the size. |
+| Texting friends, WhatsApp, Discord (free), previews | `final/happy-birthday-to-me-v12-720p.mp4` (151 MB) | Small enough for most messengers. |
 | **X / Twitter** | a teaser under 2:20 (to do) | Free accounts cap video at 2 min 20 s; the full cut is 3:31. |
 
 ## Promo images: `final/promo/`
@@ -75,6 +75,29 @@ For Alex, Ilya & Geoff, and everyone who labeled ImageNet.
   - r/singularity, r/accelerate: *AlexNet turns 14 today, so I made deep learning a birthday song (made with open models on one 3090)*
   - r/StableDiffusion, r/comfyui, r/LocalLLaMA: lead with the pipeline, e.g. *Local-only music video: Qwen-Image 2.1 + LTX-2.3 + InfiniteTalk on a single 3090, $0*. Then add a comment with the workflow breakdown. These subs reward process posts.
   - r/MachineLearning: only as a `[P]` project post that follows their rules. They're strict.
+
+## LinkedIn
+
+Upload the video natively (the 1080p `v12.mp4`), and put the YouTube and repo links in the first comment. LinkedIn down-ranks posts with links in the body.
+
+```
+14 years ago today, on September 30, 2012, AlexNet was submitted to ImageNet.
+
+To me, that's the birth of modern deep learning. Three things came together for the first time:
+→ GPUs: two GTX 580s doing massively parallel training
+→ Deep neural networks: eight layers, ReLU, dropout
+→ Data at scale: 1.2 million labeled images
+
+Everything since (transformers, ChatGPT, AlphaFold, the 2024 Nobel Prizes) builds on those three pillars. The rest is details.
+
+So I made deep learning a birthday present: a music video. Meet Lexi (Alex·Net → Lexi), a bratty 14-year-old who recaps fourteen years of AI in 3 minutes and 14 seconds. Her jersey says 15.3, AlexNet's top-5 error.
+
+Made with open models on a single RTX 3090, with a $0 budget, together with Claude. The whole pipeline is open source if you want to build your own.
+
+Happy birthday, deep learning. For Alex, Ilya & Geoff, and everyone who labeled ImageNet.
+
+#DeepLearning #AI #MachineLearning #ImageNet #AlexNet
+```
 
 ## X
 
