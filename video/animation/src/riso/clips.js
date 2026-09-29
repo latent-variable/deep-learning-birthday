@@ -2,6 +2,7 @@ const CLIPS = {
   'b47_letter': 121,
   'b48_grounded': 121,
   'b49_killswitch': 121,
+  'b49_killswitch_empty': 121,
   'c2_drive': 121,
   'c3_kaiju': 121,
   'c_chains': 121,

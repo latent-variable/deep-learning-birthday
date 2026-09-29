@@ -204,8 +204,8 @@ plate("o_label", 184.62, 189.96, "2026.09.30",
       "The girl points straight at the viewer with a smug grin, a neon bounding box drawn around the camera frame. Close medium shot, direct eye contact.",
       "She points at the camera and leans in closer with a smirk.")
 plate("o_cake", 189.96, 194.72, "2026.09.30",
-      "The girl holds the birthday cake with fourteen tiny graphics card candles, all lit, and blows them out, happy and a little tearful, confetti, warm glow.",
-      "She blows out the candles, the flames go out, confetti falls, she laughs.")
+      "The girl holds the birthday cake with fourteen tiny graphics card candles, all lit, beaming with a huge happy grin, eyes as happy arcs, lifting the cake toward the viewer, confetti, warm glow.",
+      "She beams with joy and lifts the birthday cake toward the viewer, the candles flicker, confetti falls around her, she bounces happily.")   # final plate: fix_plates.py cake_joy
 
 
 def main():

@@ -30,7 +30,8 @@ const CUTS = {
   p42_lobster: { off: 0, speed: .4 },   // re-roll: cuts to a close-up after 1.6 s
   p46_clay: { off: .4, speed: 1, pp: 2.7 },   /* the kick after 3.2 s grows a third leg */ b47_letter: { off: 0, speed: 1 }, b48_grounded: { off: 0, speed: 1 }, b49_killswitch: { off: 0, speed: 1 },
   f_party: { off: 0, speed: 1 }, o_label: { off: 0, speed: 1 },
-  o_cake: { off: 1.1, speed: 1 },       // her laugh + confetti lands on the last "me"
+  o_cake: { off: 0, speed: 1, pp: 2.8 },   // the joyful re-do: clean for 3 s, then it zooms out; ping-pong the beaming part
+  b49_killswitch_empty: { off: 0, speed: .85 },   // the wheel grows spokes after 2.6 s
   // tribute re-shoots (2026-09-28): real people in the scenes
   p06_nursery: { off: 0, speed: 1 }, p33_ceo: { off: 0, speed: 1 },
   p34_nobel: { off: 0, speed: .6, pp: 3.0 },      // 7.7 s shot from a 5 s clip: ping-pong the calm hug
