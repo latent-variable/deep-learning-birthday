@@ -40,7 +40,7 @@ Every frame is a pure function of time, so any moment can be re-rendered and rev
 It sets up ComfyUI and the models, and walks through the steps below with you. That's how this video was made: one long conversation, with critic subagents reviewing every pass.
 
 **The steps:**
-1. **Song and timing.** Put your track in `video/animation/assets/`, then align the lyrics and beats (`scripts/align_lyrics.py`, into `video/timing/`); that data becomes `src/song.js`.
+1. **Song and timing.** Iterate on style and lyrics locally with ACE-Step 1.5 (`music/`, with legibility scored by faster-whisper). For the best final audio quality, generate the finished song with Suno; use a paid plan if you want to monetize it. Put your track in `video/animation/assets/`, then align the lyrics and beats (`scripts/align_lyrics.py`, into `video/timing/`); that data becomes `src/song.js`.
 2. **Look and character.** Design a character sheet with Qwen-Image (`video/workflows/qwen21_*`) and cut out sticker poses (`video/assets/split_sheet.py`).
 3. **Plates.** Write one prompt per lyric beat in `video/plates/plates.py` and generate them with `run_plates.sh`. Targeted fixes go through `fix_plates.py`.
 4. **Motion.** Run `run_ltx.sh` per plate and `extract_clips.sh`, then trim the wonky parts in `cuts.js`.
