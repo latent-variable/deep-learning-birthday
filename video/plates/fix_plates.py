@@ -41,6 +41,15 @@ JOBS = {
  'cake_joy': ('o_cake', 'o_cake', "Edit <image1>: change only the girl's face and the cake: no tears at all, a huge beaming open-mouthed happy grin, her square pixel eyes turned into two "
               "happy upward arcs, rosy blushing cheeks, and she lifts the birthday cake up toward the viewer with both hands as if offering us a slice. The candles are lit. "
               f"Keep her outfit, her pose, the confetti, the framing and the risograph print style exactly the same. {KEEP}", 5),
+ # a proper run cycle: one 2×2 sheet (same drawing in every cell, all running RIGHT in side view), split into 4 frames in code order 1→2→3→4
+ 'lino_cycle': ('lino_run', 'lino_cycle', "A 2 by 2 grid animation sprite sheet of a four-frame running cycle of the man from <image1>, drawn identically in every frame as a risograph print sticker in "
+                "the exact art style of <image2>: fluorescent pink, riso blue and yellow inks with navy line work, halftone dots. Keep his exact likeness from <image1>: round wire glasses, "
+                "dark wavy hair, mustache and short beard, warm tan skin, and his colorful short-sleeve shirt with little cartoon cats; dark jeans and white sneakers. In every frame he is "
+                "seen from the side in profile, facing RIGHT and running toward the right edge, both sneakers pointing right, a slightly frantic grin. Frame 1 (top left): right leg reaching "
+                "forward, left leg pushing off behind, left arm forward. Frame 2 (top right): passing pose, left knee lifted high passing under his body, body at its highest. Frame 3 (bottom "
+                "left): left leg reaching forward, right leg pushing off behind, right arm forward. Frame 4 (bottom right): passing pose, right knee lifted high. Same size and same position "
+                "in each cell, whole body visible. Plain flat solid bright green background, no grid lines, no text, no numbers. Copy only the drawing style from <image2>, never its person.", 5,
+                ROOT / 'video/assets/people/style_ref.png', ROOT / 'video/assets/people/refs/lino.jpg'),
 }
 def run(job):
     src, dst, prompt, seed, *extra = JOBS[job]; ref, base = (extra + [None, None])[:2]

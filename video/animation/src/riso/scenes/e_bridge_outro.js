@@ -30,8 +30,11 @@
       const cam = camAt({ cam0: { z: 1.1 }, cam1: { z: 1.02 } }, lt, dur);
       await plateOrClip('b49_killswitch_empty', lt, dur, { cam0: cam, cam1: cam });
       // the human in the loop is the director: two running poses swapped every half beat, running in place in the wheel
-      const M = coverMap({ width: 1376, height: 768 }, cam), [rx, ry] = M(1068, 535), rh = 285 * M.s / 1.406, step = Math.floor(bpOf(t) * 2) % 2;
-      sticker(await SAFE(STK(step ? 'lino_run_a' : 'lino_run_b')), rx, ry - rh / 2 - Math.abs(Math.sin(bpOf(t) * Math.PI * 2)) * 10, rh, { rot: .05, border: 6 });
+      // a 4-frame run cycle (stride, passing, stride, passing: lino_cycle_0..3, all facing right), one frame per quarter beat = a step every half beat
+      const M = coverMap({ width: 1376, height: 768 }, cam), [rx, ry] = M(1068, 535), rh = 285 * M.s / 1.406, fr = Math.floor(bpOf(t) * 4) % 4;
+      for (let i = 0; i < 5; i++) { const R = rng('rl' + i), y = ry - rh * (.25 + .6 * R()), x = rx - rh * .45 - ((t * 900 + R() * 300) % 260);   // speed lines trailing left
+        S.strokeStyle = INK.paper; S.globalAlpha = .7; S.lineWidth = 4; S.beginPath(); S.moveTo(x, y); S.lineTo(x - 50 - R() * 40, y); S.stroke(); } S.globalAlpha = 1;
+      sticker(await SAFE(STK('lino_cycle_' + fr)), rx, ry - rh / 2 - (fr % 2) * 8, rh, { rot: .03, border: 6 });
       const L = 49, th = wt(L, 'Human'), tk = wt(L, 'Kill');
       bbox(210, 280, 380, 200, 'kill_switch', .99, t - tk, { col: INK.pink, size: 30 });
       if (t > tk + .3) text(S, 'click.', 360, 330, { size: 70, font: F.serif, style: 'italic', col: INK.paper, alpha: seg(t, tk + .3, tk + .5) });

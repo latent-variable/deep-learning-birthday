@@ -58,9 +58,34 @@
       if (t > tf - .1) { panel(1400, 190, 400, 330, 'cal', t); S.fillStyle = INK.pink; S.fillRect(1400, 190, 400, 80);
         text(S, 'NOV 2023', 1600, 232, { size: 40, font: F.pixel, col: INK.paper });
         const flip = seg((t - tf) % ((tt - tf) / 4), 0, .07); text(S, days[di], 1600, 395, { size: 90, font: F.hook, col: di === 4 ? INK.pink : INK.navy, sy: di < 4 ? lerp(.4, 1, flip) : 1, sc: 1 }); }
-      rubberStamp(t, 'FIRED', 700, 800, 120, INK.pink, t - wt(L, 'fired'), { rot: -.12 });
-      rubberStamp(t, 'REHIRED', 720, 810, 120, INK.navy, t - tt, { rot: .08 });
-      bbox(1440, 880, 250, 130, 'popcorn', .97, t - wt(L, 'back'), { col: INK.yellow, txt: INK.navy, size: 26 });
+      // the five days as a doomscroll: a card slams onto the pile every half beat (real quotes and events, Nov 17–21, 2023)
+      const day = d => tf + d * (tt - tf) / 4;   // the calendar's day boundaries (FRI 0 … TUE 4)
+      const FEED = [[wt(L, 'fired') + .1, 'OpenAI board · Nov 17', 'Sam "was not consistently candid"'], [tf + .15, '@gdb · Nov 17', "\"based on today's news, i quit.\""],
+        [day(2), 'Nov 19', 'interim CEO #2: Emmett Shear'], [day(3), '@satyanadella · Nov 20', 'Sam & Greg are joining Microsoft'],
+        [day(3) + .2, '@ilyasut · Nov 20', "\"I deeply regret my participation in the board's actions.\""], [day(3) + .4, 'the staff letter · Nov 20', '700+ of ~770: bring him back or we walk'],
+        [tt, 'Nov 21 · late', 'Sam returns as CEO. new board.']];
+      for (let i = 0; i < FEED.length; i++) { const [t0, who, msg] = FEED[i], a = t - t0; if (a < 0) continue; const R = rng('fd' + i), k = backOut(seg(a, 0, .16));
+        S.save(); S.translate(1610 + (R() - .5) * 60, 690 + (R() - .5) * 50); S.rotate((R() - .5) * .14); S.scale(k, k);
+        S.fillStyle = INK.navy; S.fillRect(-262 + 10, -78 + 12, 524, 156); S.fillStyle = i === 4 ? INK.yellow : INK.paper; S.fillRect(-262, -78, 524, 156);
+        text(S, who, -240, -44, { size: 24, font: F.pixel, align: 'left', col: INK.pink }); const fs = msg.length > 44 ? 26 : 32;
+        const words = msg.split(' '); let line = '', ly = 0, lines = []; for (const w of words) { if (measure(S, line + w, fs, F.serif, 'italic') > 480) { lines.push(line); line = ''; } line += w + ' '; } lines.push(line);
+        lines.forEach((ln, j) => text(S, ln.trim(), -240, 4 + j * (fs + 6) - (lines.length - 1) * 8, { size: fs, font: F.serif, style: 'italic', align: 'left', col: INK.navy }));
+        S.restore(); if (a < .08) POST.shake = [(hash(boilT(t) + i) - .5) * 16, (hash(boilT(t) + i + 5) - .5) * 12]; }
+      // Ilya's regret, and the hearts ("OpenAI is nothing without its people")
+      const ti = day(3) + .2; if (t > ti) { sticker(await SAFE(FACE('sutskever')), 120, 150, 190, { k: backOut(seg(t, ti, ti + .25)), rot: -.08, border: 10 });
+        tag(30, 40, 190, 225, 'ilya_sutskever', t - ti - .1, { col: INK.yellow, size: 22, below: true }); }
+      const th = day(1); if (t > th) for (let i = 0; i < 22; i++) { const R = rng('hrt' + i), a = t - th - R() * .8; if (a < 0) continue;
+        const x = 700 + R() * 700 + Math.sin(a * 4 + i) * 20, y = 1000 - a * (260 + R() * 200), s = 16 + R() * 14; S.fillStyle = [INK.pink, INK.yellow, INK.paper][i % 3]; S.globalAlpha = 1 - seg(a, 1.6, 2.2);
+        S.beginPath(); S.moveTo(x, y + s * .9); S.bezierCurveTo(x - s * 1.6, y - s * .2, x - s * .6, y - s * 1.3, x, y - s * .35); S.bezierCurveTo(x + s * .6, y - s * 1.3, x + s * 1.6, y - s * .2, x, y + s * .9); S.fill(); }
+      S.globalAlpha = 1; if (t > th + .2) text(S, 'openai is nothing without its people', 960, 862, { size: 30, font: F.mono, col: INK.pink, knock: 10, alpha: seg(t, th + .2, th + .4) * (1 - seg(t, tt - .1, tt + .1)) });
+      // the CEO nameplate on the table flips: Sam → Mira → Emmett → Sam
+      const ceo = t < tf ? 'SAM ALTMAN' : t < day(2) ? 'MIRA MURATI (interim)' : t < tt ? 'EMMETT SHEAR (interim)' : 'SAM ALTMAN';
+      const flipAt = [tf, day(2), tt].reduce((m, x) => t >= x ? x : m, -9), fk = lerp(.2, 1, seg(t, flipAt, flipAt + .08));
+      S.save(); S.translate(330, 905); S.scale(1, fk); S.fillStyle = INK.navy; S.fillRect(-250, -40, 500, 80); text(S, 'CEO: ' + ceo, 0, 2, { size: ceo.length > 12 ? 26 : 34, font: F.pixel, col: INK.yellow }); S.restore();
+      rubberStamp(t, 'FIRED', 420, 640, 110, INK.pink, t - wt(L, 'fired'), { rot: -.12 });
+      rubberStamp(t, 'REHIRED', 440, 650, 110, INK.navy, t - tt, { rot: .08 });
+      bbox(1680, 900, 170, 110, 'popcorn', .97, t - wt(L, 'back'), { col: INK.yellow, txt: INK.navy, size: 22 });
+      beatPunch(t, .018);
     }, { tin: ['tear', .35] }],
     // Dad got a Nobel, Uncle Demis too, alright
     [113.12, async (t, lt, dur) => {   // a celebration cut on the beats: Dad (punch-in) → PHYSICS → whip to Uncle Demis → CHEMISTRY → wide: alright, NOBEL ×2
