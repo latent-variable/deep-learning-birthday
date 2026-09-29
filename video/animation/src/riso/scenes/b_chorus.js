@@ -93,6 +93,25 @@ function tokenChips(t, li, o = {}) {
   const tMe = wt(li, '(Me!)'), last = words[words.length - 1].e;
   if (t > last && t < tMe) text(S, 'next token → ?', o.x ?? 150, y + 170, { size: 44, font: F.mono, align: 'left', col: INK.paper, alpha: Math.floor(t * 6) % 2 ? 1 : .4 });
 }
+// ---- the ski run (chorus 1, line D): the loss curve traced from plates/img/c_ski_bg_s5.png (1376×768 plate px, top of the blue line) ----
+const SKI_W = 1376, SKI_H = 768, SKI_STAR = [1166, 606];
+const SKI_CURVE = [[140, 192], [180, 267], [220, 324], [260, 385], [300, 415], [340, 436], [380, 462], [420, 485], [460, 505], [500, 524], [540, 540], [580, 554], [620, 567],
+  [660, 578], [700, 588], [740, 597], [780, 605], [820, 613], [860, 620], [900, 626], [940, 630], [980, 635], [1020, 639], [1060, 642], [1100, 646], [1260, 652], [1300, 653]];
+const skiY = x => kf(x, SKI_CURVE, v => v);
+// where she is at time t: rides the curve (linear in x between the lyric keys, so she never stops), jumps with a full spin on "level", lands on the star on "up"
+function skiAt(t, tg, tdn, tl, tu) {
+  if (t < tl) { const x = kf(t, [[tg, 240], [tdn, 660], [tl, 1000]], v => v), sl = (skiY(x + 8) - skiY(x - 8)) / 16;
+    return { x, y: skiY(x) - 3 + Math.sin(t * 7) * 4, rot: clamp(Math.atan(sl), -.1, .75) - .17 + Math.sin(t * 7) * .05, air: false }; }
+  const k = seg(t, tl, tu), x = lerp(1000, SKI_STAR[0], k), y = lerp(skiY(1000), SKI_STAR[1] - 100, k) - Math.sin(k * Math.PI) * 260;
+  if (t < tu) return { x, y, rot: -.17 + easeInOut(k) * TAU, air: true };
+  return { x: SKI_STAR[0], y: SKI_STAR[1] - 100 - Math.abs(Math.sin((t - tu) * 9)) * 18 * (1 - seg(t, tu, tu + .6)), rot: -.1, air: false };
+}
+// plate px → screen px under cover(img, cam) (same maths as engine.js cover)
+function coverMap(img, cam) {
+  const z = cam.z ?? 1, fx = cam.x ?? .5, fy = cam.y ?? .5, s = Math.max(W / img.width, H / img.height) * z, w = img.width * s, h = img.height * s;
+  const x0 = w >= W ? clamp(W / 2 - fx * w, W - w, 0) : (W - w) / 2, y0 = h >= H ? clamp(H / 2 - fy * h, H - h, 0) : (H - h) * (cam.ay ?? .5);
+  const f = (px, py) => [x0 + px * s, y0 + py * s]; f.s = s; return f;
+}
 // line C, chorus 4: every stamp of the video, back on beats
 const ALL_STAMPS = ['RETIRED', "YOU'RE FIRED", 'HIRED', 'CUTE.', 'GG', 'MUTED', 'TOO DANGEROUS', 'NO PERMISSION', 'DENIED', 'ON STRIKE', 'REHIRED', 'OOPS', 'SOLD', 'BREACH', 'NO HUMANS', 'FOR FREE', 'LEVEL UP!', 'GOLD'];
 function stampStorm(t, t0) {
@@ -169,11 +188,24 @@ function chorus(n, li0, nextStart) {
     const L = LYR[LD], tMe = wt(LC, '(Me!)');
     if (n === 0) { // gradient descent, I go down to level up — the plate IS the loss curve
       const tg = wt(LD, 'Gradient'), tdn = wt(LD, 'down'), tl = wt(LD, 'level');
-      await plateOrClip('c_ski', lt, dur, { cam0: { z: 1.35, x: .55, y: .2 }, cam1: { z: 1.05, x: .7, y: .7 }, ease: easeIn });
-      bbox(20, 660, 1200, 400, 'loss', null, t - tg, { col: INK.blue, size: 40, lw: 8 });   // the slope she rides down
-      text(S, '∇', 1500, 300, { size: 260, font: F.serif, col: INK.pink, knock: 16, alpha: seg(t, tg, tg + .1) * (1 - seg(t, tdn, tdn + .2)), rot: boil(t, 'nab', .03) });
-      hookLine(t, LD, { rows: [2, 3, 3], size: 118, x: 560, y: 560, until: L.end + .1, cols: [INK.navy, INK.pink] });
-      if (t > tl) { rubberStamp(t, 'LEVEL UP!', 1500, 820, 130, INK.pink, t - tl, { rot: -.1 }); sparkles(S, t, 18, [INK.yellow, INK.pink], 'lvl'); }
+      // Lexi (a cutout) rides the actual loss curve of the empty slope plate; the camera tracks her, she launches on "level" and lands on the star on "up"
+      const tu = wt(LD, 'up'), sk = skiAt(t, tg, tdn, tl, tu), bg = await SAFE(PL('c_ski_bg'));
+      const zc = kf(t, [[tg, 1.32], [tdn, 1.22], [tl, 1.16], [tu, 1.0]]), cam = { z: zc, x: clamp(sk.x / SKI_W + .17 / zc, 0, 1), y: clamp(sk.y / SKI_H - .27 / zc, 0, 1) };   // she rides low-left of frame; the words sit top-right
+      cover(I, bg, cam); const M = coverMap(bg, cam);
+      const [sx, sy] = M(sk.x, sk.y), h = 420 * M.s / 1.406;
+      for (let i = 1; i < 26; i++) {   // snow spray kicked up behind the board
+        const a = i * .035, p = skiAt(t - a, tg, tdn, tl, tu); if (p.air || t - a < tg) continue; const R = rng('spr' + i), [px, py] = M(p.x, p.y);
+        I.fillStyle = [INK.pink, INK.blue, INK.paper][i % 3]; I.globalAlpha = 1 - i / 26; I.fillRect(px - 40 + R() * 30, py - 18 - a * 260 * R(), 14 - i * .3, 10 - i * .2); }
+      I.globalAlpha = 1;
+      const rot = sk.rot, ox = -.17 * h * .93, oy = -.46 * h;   // the board's contact point sits low and right of the cutout's centre
+      sticker(await SAFE(STK('ski_0')), sx + ox * Math.cos(rot) - oy * Math.sin(rot), sy + ox * Math.sin(rot) + oy * Math.cos(rot), h, { rot, border: 10 });
+      if (t < tl) bbox(sx - h * .62, sy - h * 1.02, h * .95, h * 1.08, 'lr=3e-4', .99, t - tg, { col: INK.yellow, txt: INK.navy, size: 26, lw: 6 });
+      text(S, '∇', 150, 170, { size: 190, font: F.serif, col: INK.pink, knock: 16, alpha: seg(t, tg, tg + .1) * (1 - seg(t, tdn, tdn + .2)), rot: boil(t, 'nab', .03) });
+      hookLine(t, LD, { rows: [2, 3, 3], size: 100, x: 1330, y: 250, until: L.end + .1, cols: [INK.navy, INK.pink] });
+      if (t > tu) { const [qx, qy] = M(SKI_STAR[0], SKI_STAR[1]); for (let i = 0; i < 16; i++) { const a = i / 16 * TAU, r0 = 120, r1 = 120 + 260 * easeOut(seg(t, tu, tu + .35));
+          S.strokeStyle = [INK.yellow, INK.pink][i % 2]; S.lineWidth = 10; S.globalAlpha = 1 - seg(t, tu + .3, tu + .6); S.beginPath(); S.moveTo(qx + Math.cos(a) * r0, qy + Math.sin(a) * r0); S.lineTo(qx + Math.cos(a) * r1, qy + Math.sin(a) * r1); S.stroke(); }
+        S.globalAlpha = 1; bbox(M(60, 60)[0], M(60, 60)[1], M(1330, 720)[0] - M(60, 60)[0], M(1330, 720)[1] - M(60, 60)[1], 'loss → 0.00', null, t - tu - .1, { col: INK.blue, size: 34, lw: 7 }); }
+      if (t > tl) { rubberStamp(t, 'LEVEL UP!', 760, 470, 130, INK.pink, t - tu, { rot: -.1 }); sparkles(S, t, 18, [INK.yellow, INK.pink], 'lvl'); }
     } else if (n === 1) { // can't even drive, and the world's my training set
       await plateOrClip('c2_drive', lt, dur, { cam0: { z: 1.02 }, cam1: { z: 1.16 } });
       const td = wt(LD, 'drive'), tw = wt(LD, 'world');

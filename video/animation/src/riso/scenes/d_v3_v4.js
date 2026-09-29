@@ -63,13 +63,31 @@
       bbox(1440, 880, 250, 130, 'popcorn', .97, t - wt(L, 'back'), { col: INK.yellow, txt: INK.navy, size: 26 });
     }, { tin: ['tear', .35] }],
     // Dad got a Nobel, Uncle Demis too, alright
-    [113.12, async (t, lt, dur) => {
-      await plateOrClip('p34_nobel', lt, dur, { cam0: { z: 1.04 }, cam1: { z: 1.0 } });
-      const L = 34, td = wt(L, 'Dad'), tu = wt(L, 'Uncle'), ta = wt(L, 'alright');
-      confetti(I, t, td, 90, { seed: 'nob' });
-      bbox(440, 60, 350, 400, 'dad · geoffrey_hinton', .99, t - td, { col: INK.yellow, txt: INK.navy, size: 28 }); text(S, 'physics 2024', 615, 505, { size: 34, font: F.mono, col: INK.navy, knock: 8, alpha: seg(t, td + .2, td + .4) });
-      bbox(1320, 10, 250, 330, 'uncle_demis · hassabis', .99, t - tu, { col: INK.pink, size: 28 }); text(S, 'chemistry 2024', 1445, 412, { size: 34, font: F.mono, col: INK.navy, knock: 8, alpha: seg(t, tu + .2, tu + .4) });
-      if (t > ta) text(S, 'alright', 960, 700, { size: 120, font: F.serif, style: 'italic', col: INK.navy, knock: 14, sc: backOut(seg(t, ta, ta + .2)), rot: -.06 });
+    [113.12, async (t, lt, dur) => {   // a celebration cut on the beats: Dad (punch-in) → PHYSICS → whip to Uncle Demis → CHEMISTRY → wide: alright, NOBEL ×2
+      const L = 34, td = wt(L, 'Dad'), tn = wt(L, 'Nobel'), tu = wt(L, 'Uncle'), tdm = wt(L, 'Demis'), ta = wt(L, 'alright'), t2 = LYR[L].end + .1;
+      const [z, x, y] = kf(t, [[113.12, [1.02, .5, .5]], [td - .25, [1.06, .45, .45]], [td, [1.7, .2, .25]], [tn, [1.78, .2, .25]], [tu - .2, [1.84, .2, .25]],
+        [tu + .05, [1.7, .82, .22]], [ta - .25, [1.82, .82, .22]], [ta, [1.0, .5, .5]], [120.8, [1.08, .5, .5]]]);
+      await plateOrClip('p34_nobel', lt, dur, { cam0: { z, x, y }, cam1: { z, x, y } });
+      for (const w of [td, tu, ta]) if (t - w >= 0 && t - w < .12) POST.shake = [(hash(boilT(t)) - .5) * 36, (hash(boilT(t) + 2) - .5) * 24];
+      beatPunch(t, .02);
+      const close = t >= td && t < ta;
+      if (close && t < tu) {   // Dad
+        bbox(760, 90, 560, 560, 'dad · geoffrey_hinton', .99, t - td, { col: INK.yellow, txt: INK.navy, size: 30, lw: 7 });
+        if (t > tn) { slam(t, { w: 'PHYSICS', s: tn, x: 390, y: 300, size: 170, col: INK.pink, rot: -.05 }); slam(t, { w: '2024', s: tn + .12, x: 390, y: 470, size: 120, col: INK.navy, rot: .03 });
+          sticker(await SAFE(LOGO('nobel')), 390, 700, 230, { k: backOut(seg(t, tn + .05, tn + .3)), rot: -.1 + Math.sin(t * 5) * .06, border: 10 });
+          confetti(I, t, tn, 90, { seed: 'phy', burst: true }); if (t - tn < .1) { POST.flash = .6 * (1 - (t - tn) * 10); POST.flashCol = INK.yellow; } }
+      } else if (close) {      // Uncle Demis
+        bbox(890, 70, 500, 500, 'uncle_demis · hassabis', .99, t - tu, { col: INK.pink, size: 30, lw: 7 });
+        if (t > tdm) { slam(t, { w: 'CHEMISTRY', s: tdm, x: 440, y: 300, size: 138, col: INK.blue, rot: .04 }); slam(t, { w: '2024', s: tdm + .12, x: 440, y: 460, size: 120, col: INK.navy, rot: -.03 });
+          sticker(await SAFE(LOGO('nobel')), 440, 690, 230, { k: backOut(seg(t, tdm + .05, tdm + .3)), rot: .1 + Math.sin(t * 5) * .06, border: 10 });
+          confetti(I, t, tdm, 90, { seed: 'chm', burst: true }); if (t - tdm < .1) { POST.flash = .6 * (1 - (t - tdm) * 10); POST.flashCol = INK.pink; } }
+      } else if (t >= ta) {    // wide: everyone celebrates
+        confetti(I, t, ta, 200, { seed: 'nobw', burst: true }); confetti(I, t, ta + .5, 120, { seed: 'nobw2', burst: true });
+        sparkles(S, t, 22, [INK.yellow, INK.pink], 'nob');
+        text(S, 'alright', 960, 640, { size: 130, font: F.serif, style: 'italic', col: INK.navy, knock: 16, sc: backOut(seg(t, ta, ta + .2)), rot: -.06 });
+        rubberStamp(t, 'NOBEL ×2', 1010, 130, 100, INK.pink, t - t2, { rot: -.08 });
+        text(S, 'physics + chemistry · same week · oct 2024', 960, 800, { size: 36, font: F.mono, col: INK.navy, knock: 10, alpha: seg(t, t2 + .3, t2 + .5) });
+      } else confetti(I, t, 113.2, 50, { seed: 'nob' });
       if (lt > dur - .3) { POST.flash = seg(lt, dur - .3, dur); POST.flashCol = INK.blue; }
     }, { tin: ['stripes', .3] }],
 

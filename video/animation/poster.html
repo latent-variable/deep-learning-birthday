@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Riso Live posters</title>
+<style>
+  @font-face { font-family: "Hook"; src: url(assets/fonts/BricolageGrotesque.woff2); font-weight: 200 800; font-display: block; }
+  @font-face { font-family: "Serif"; src: url(assets/fonts/InstrumentSerif.woff2); font-style: normal; font-display: block; }
+  @font-face { font-family: "Serif"; src: url(assets/fonts/InstrumentSerif-Italic.woff2); font-style: italic; font-display: block; }
+  @font-face { font-family: "Pixel"; src: url(assets/fonts/Silkscreen.woff2); font-display: block; }
+  @font-face { font-family: "Mono"; src: url(assets/fonts/SpaceMono.woff2); font-weight: 700; font-display: block; }
+  html, body { margin: 0; background: #1b1820; color: #eee; font: 13px system-ui, sans-serif; }
+  main { padding: 12px; display: grid; gap: 8px; }
+  #out { width: min(100%, 1280px); height: auto; background: #F4EDDB; }
+  .bar { display: none; }
+</style>
+<script>
+  // Posters (channel banner, thumbnails) through the same riso engine, at their own canvas size.
+  //   poster.html?p=banner|banner_clean|thumb_a|thumb_b|thumb_c      render: node render.mjs --page=poster.html --poster=banner --stills=3
+  window.POSTER = new URLSearchParams(location.search).get('p') || 'banner';
+  [window.CANVAS_W, window.CANVAS_H] = POSTER.startsWith('banner') ? [2560, 1440] : [1920, 1080];
+</script>
+</head>
+<body>
+<main>
+  <canvas id="out"></canvas>
+  <div class="bar"><input id="scrub" type="range"><span id="tt"></span></div>
+</main>
+<script src="src/config.js"></script>
+<script src="src/song.js"></script>
+<script src="src/riso/engine.js"></script>
+<script src="src/riso/fx.js"></script>
+<script src="src/riso/clips.js"></script>
+<script src="src/riso/audio.js"></script>
+<script src="src/riso/cuts.js"></script>
+<script src="src/riso/scenes/common.js"></script>
+<script src="src/riso/scenes/posters.js"></script>
+<script>
+  const out = document.getElementById('out'); out.width = W; out.height = H;
+  document.getElementById('scrub').max = 3; document.getElementById('scrub').value = 3;
+</script>
+</body>
+</html>

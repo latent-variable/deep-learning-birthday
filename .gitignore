@@ -38,3 +38,6 @@
 /video/assets/logos/tmp/
 /video/assets/logos/cut/
 /video/assets/logos/bad*/
+
+# profile pictures (regenerate with video/assets/people/pfp.py)
+video/assets/people/pfp/

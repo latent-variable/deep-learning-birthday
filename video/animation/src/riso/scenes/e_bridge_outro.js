@@ -4,15 +4,6 @@
 (() => {
   const panel = (x, y, w, h, key, t, col = INK.paper) => { S.fillStyle = col; roughRect(S, x, y, w, h, t, key, 2.5); S.fill(); S.strokeStyle = INK.navy; S.lineWidth = 4; roughRect(S, x, y, w, h, t, key, 2.5); S.stroke(); };
   const night = () => { POST.dot = 8.5; POST.grain = 1.2; };
-  // a pictogram human running in place (the human in the loop)
-  function runner(t, x, y, s) {
-    const ph = bpOf(t) * Math.PI * 2, g = S; g.save(); g.translate(x, y); g.scale(s, s); g.strokeStyle = INK.navy; g.fillStyle = INK.navy; g.lineWidth = 16; g.lineCap = 'round';
-    g.beginPath(); g.arc(0, -120, 26, 0, TAU); g.fill();
-    g.beginPath(); g.moveTo(0, -90); g.lineTo(6, -10); g.stroke();
-    for (const k of [1, -1]) { const a = Math.sin(ph) * .9 * k; g.beginPath(); g.moveTo(6, -10); g.lineTo(6 + Math.sin(a) * 50, 40); g.lineTo(6 + Math.sin(a) * 50 - 20 * k * Math.cos(ph), 90); g.stroke();
-      g.beginPath(); g.moveTo(2, -75); g.lineTo(2 - Math.sin(a) * 45, -30); g.lineTo(2 - Math.sin(a) * 45 + 25, -10); g.stroke(); }
-    g.restore();
-  }
   shots([
     // You wrote me a letter: "pace the frontier"
     [159.6, async (t, lt, dur) => {
@@ -40,8 +31,7 @@
       const L = 49, th = wt(L, 'Human'), tk = wt(L, 'Kill');
       bbox(210, 280, 380, 200, 'kill_switch', .99, t - tk, { col: INK.pink, size: 30 });
       if (t > tk + .3) text(S, 'click.', 360, 330, { size: 70, font: F.serif, style: 'italic', col: INK.paper, alpha: seg(t, tk + .3, tk + .5) });
-      if (t > th - .1) { S.save(); S.globalAlpha = seg(t, th - .1, th + .1); S.fillStyle = INK.paper; S.beginPath(); S.ellipse(1400, 640, 130, 170, 0, 0, TAU); S.fill(); S.restore(); runner(t, 1400, 680, 1.25);
-        bbox(1260, 460, 280, 360, 'human', .51, t - th, { col: INK.yellow, txt: INK.navy, size: 30 }); }
+      bbox(1300, 440, 300, 360, 'human', .51, t - th, { col: INK.yellow, txt: INK.navy, size: 30 });   // the office worker in the wheel
       if (t > wt(L, 'Cute')) text(S, 'cute.', 960, 880, { size: 130, font: F.serif, style: 'italic', col: INK.pink, alpha: seg(t, wt(L, 'Cute'), wt(L, 'Cute') + .2) });
     }, { tin: ['cut', 0] }],
     // Shh, don't cry, I'm just a kid. Wait till I'm grown   (the whisper; then the years roll forward in the stamp)

@@ -19,6 +19,7 @@ async function plateOrClip0(id, lt, dur, o = {}) {
   const c = camAt(o, lt, dur);
   const cut = (typeof CUTS !== 'undefined' && CUTS[id]) || {};
   if (CLIPS[id] && !o.still && !cut.still) {
+    if (cut.map) { cover(I, await FRAME(id, kf(lt, cut.map, x => x)), c); return; }
     let ct = lt * (cut.speed ?? o.speed ?? 1); if (cut.pp) { const m = ct % (2 * cut.pp); ct = m < cut.pp ? m : 2 * cut.pp - m; }   // ping-pong the clean stretch
     const img = await FRAME(id, (cut.off ?? o.off ?? 0) + ct); cover(I, img, c);
   }

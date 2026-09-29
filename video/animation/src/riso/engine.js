@@ -10,7 +10,7 @@
 // Scene API (see fx.js for the helpers):
 //   shots([[t0, fn, opts], ...])   fn = async (t, lt, dur) => {...}   opts.tin = ['dots'|'tear'|'slide'|'flash'|'cut', seconds]
 //   await IMG(path) · await FRAME(clipId, seconds) · cover(I, img, cam) · INK.pink etc.
-const W = 1920, H = 1080, FPS = 24;
+const W = window.CANVAS_W || 1920, H = window.CANVAS_H || 1080, FPS = 24;   // poster.html sets CANVAS_W/H for banners and thumbnails
 const DUR = PROJECT.duration, BPM = PROJECT.bpm, BEAT = 60 / BPM, OFF = PROJECT.offset || 0, BOIL = 12;
 const TAU = Math.PI * 2;
 const INK = { paper: '#F4EDDB', pink: '#FF4FA3', blue: '#2D5BD6', yellow: '#FFD83A', navy: '#25224A', white: '#F4EDDB' };

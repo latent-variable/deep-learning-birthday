@@ -20,9 +20,9 @@
     }],
     // ---- Fourteen candles, here's the recap / (Ooh) try to keep up → she blows them out ----
     [2.84, async (t, lt, dur) => {
-      await plateOrClip('p01_candles', lt, dur, { cam0: { z: 1.0, y: .4 }, cam1: { z: 1.08, y: .45 } });
-      confetti(I, t, 2.9, 60, { seed: 'c1' });
-      const L1 = 1, L2 = 2;
+      const L1 = 1, L2 = 2, tb = wt(L2, 'keep');   // a two-plate puppet swap: lit, then blown out (eyes squeezed shut) on "keep"
+      await plateOrClip(t < tb ? 'p01_candles' : 'p01_candles_out', lt, dur, { cam0: { z: 1.0, y: .4 }, cam1: { z: 1.08, y: .45 } });
+      jolt(t, tb, 8); confetti(I, t, 2.9, 60, { seed: 'c1' });
       const row = (words, y, size, until) => { const ws = words.map(([w]) => measure(S, w, size)), sp = size * .25, tot = ws.reduce((a, b) => a + b, 0) + sp * (words.length - 1); let x = W / 2 - tot / 2;
         words.forEach(([w, s, col, rot], i) => { slam(t, { w, s, x: x + ws[i] / 2, y, size, col, rot }, { until, knock: 22 }); x += ws[i] + sp; }); };
       row([['FOURTEEN', wt(L1, 'Fourteen'), INK.navy, -.04], ['CANDLES,', wt(L1, 'candles'), INK.navy, .03]], 150, 150, 6.9);
@@ -31,7 +31,6 @@
       if (t > 4.52 && t < wt(L2, 'Try')) { const k = backOut(seg(t, 4.52, 4.7)); S.save(); S.translate(1130, 560); S.rotate(-.18); S.scale(k, k); S.fillStyle = INK.yellow; roughRect(S, -95, -48, 190, 96, t, 'ooh', 3); S.fill(); text(S, '(ooh)', 0, 0, { size: 64, font: F.serif, style: 'italic', col: INK.navy }); S.restore(); }
       row([['TRY', wt(L2, 'Try'), INK.navy, -.03], ['TO', wt(L2, 'to'), INK.blue, .02], ['KEEP', wt(L2, 'keep'), INK.pink, -.02], ['UP', wt(L2, 'up'), INK.navy, .05]], 935, 170, 6.9);
       // candles blown out on "keep up": smoke curls rise from each wick
-      const tb = wt(L2, 'keep');
       if (t > tb) for (let i = 0; i < 14; i++) { const R = rng('wick' + i), x0 = 360 + R() * 1200, y0 = 640 + R() * 120, a = t - tb - R() * .15; if (a < 0) continue;
         const pts = []; for (let j = 0; j < 8; j++) pts.push([x0 + Math.sin(j * .9 + a * 4 + i) * 16 * j / 4, y0 - j * 26 - a * 90]); scribble(S, pts, INK.blue, 7, t, 'smk' + i, clamp(a * 4)); }
       beatPunch(t, .015);

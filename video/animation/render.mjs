@@ -8,6 +8,7 @@
 //         (x,y in world px, may be page expressions like PLK.MX(1.38); w,h in screen px) through each frame's camera
 //     node render.mjs --sheet=12.5 --cols=1 --w=1920 --grid --out=out/check/g.jpg                 full-res frame with a 100 px coordinate grid (label placement)
 //     node render.mjs --stills=1.2,3.4 --out=out/stills                                     full-res PNGs
+//     node render.mjs --page=poster.html --poster=banner --stills=3 --out=out/posters/banner  banner / thumbnails (posters.js)
 //   Make the video:
 //     node render.mjs --clip [--range=0:4] --out=out/video.mp4                               straight to MP4 (one worker)
 //     node render.mjs --frames [--range=0:8] --workers=4                                     JPEG frames → out/frames (parallel, resumable)
@@ -71,7 +72,7 @@ async function openPage(tag = '') {
   const page = await browser.newPage();
   page.on('console', m => { if (['error', 'warn'].includes(m.type())) console.log(`[page${tag}]`, m.text()); });
   page.on('pageerror', e => console.log(`[page error${tag}]`, e.message));
-  await page.goto(pathToFileURL(resolve('studio.html')).href + '?render', { waitUntil: 'networkidle0' });
+  await page.goto(pathToFileURL(resolve(args.page || 'studio.html')).href + '?render' + (args.poster ? '&p=' + args.poster : ''), { waitUntil: 'networkidle0' });
   await page.waitForFunction('window.ready === true', { timeout: 60000 });
   if (args.grid) await page.evaluate(() => { window.GRID = true; });
   if (args.loop) {

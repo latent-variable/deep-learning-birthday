@@ -4,11 +4,11 @@
     // Move thirty-seven, champ retired. Tay? Fired in a day
     [43.96, async (t, lt, dur) => {
       await plateOrClip('p13_go', lt, dur, { cam0: { z: 1.12 }, cam1: { z: 1.0 }, ease: easeOut });
-      const L = 13, tm = wt(L, 'Move');
+      const L = 13, tm = wt(L, 'seven');   // the stone lands on "seven" (the clip plays backwards: see cuts.js)
       bbox(835, 860, 180, 90, 'move_37', null, t - tm, { col: INK.yellow, txt: INK.navy, size: 34 });
       text(S, 'p(human plays it) = 1/10,000', 950, 760, { size: 40, font: F.mono, col: INK.navy, knock: 10, alpha: seg(t, tm + .5, tm + .7) });
-      rubberStamp(t, 'CHAMP RETIRED', 430, 860, 80, INK.pink, t - wt(L, 'champ'), { rot: .1 });
-      if (t - tm < .15 && t > tm) POST.shake = [(hash(boilT(t)) - .5) * 40, (hash(boilT(t) + 1) - .5) * 40];
+      rubberStamp(t, 'CHAMP RETIRED', 600, 850, 80, INK.pink, t - wt(L, 'champ'), { rot: .1 });
+      jolt(t, tm, 9); if (t - tm < .15 && t > tm) POST.shake = [(hash(boilT(t)) - .5) * 40, (hash(boilT(t) + 1) - .5) * 40];
     }, { tin: ['reprint', 0] }],
     [45.9, async (t, lt, dur) => {
       await plateOrClip('p13b_tay', lt, dur, { cam0: { z: 1.05 }, cam1: { z: 1.15, y: .4 } });

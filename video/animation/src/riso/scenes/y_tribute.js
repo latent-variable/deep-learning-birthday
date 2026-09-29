@@ -73,7 +73,7 @@ const EGGS = [
   [101.7, 103.2, async (t, a) => { await logo('openai', 1650, 250, 120, a - .2); text(S, 'GPT-4 · Uniform Bar Exam', 1650, 360, { size: 28, font: F.mono, col: INK.navy, knock: 8, alpha: seg(a, .3, .5) }); }],
   [104.7, 107.8, (t, a) => cite(1150, 560, ['Pause Giant AI Experiments: An Open Letter', 'Future of Life Institute · March 22, 2023'], a - .6, { w: 700 })],
   [108.6, 113.1, async (t, a) => { await logo('openai', 150, 830, 110, a - .3); tag(240, 190, 260, 330, 'sam_altman · ceo?', a - .4, { col: INK.pink, txt: INK.paper, score: .5 }); }],
-  [113.2, 120.8, async (t, a) => { await logo('nobel', 170, 190, 170, a - 1.2); }],
+  // 113.2–120.8: the Nobel medals are part of the shot itself (d_v3_v4.js)
   // ---- verse 4 ----
   [134.7, 137.6, async (t, a) => { await logo('deepseek', 300, 170, 110, a - .3); await logo('nvidia', 1560, 470, 90, a - 1.3); text(S, 'NVDA −17% · Jan 27, 2025', 1560, 540, { size: 26, font: F.mono, col: INK.pink, knock: 6, alpha: seg(a, 1.4, 1.6) }); }],
   [137.65, 139.0, async (t, a) => { await logo('deepmind', 260, 180, 110, a - .1); await logo('openai', 260, 330, 110, a - .25); text(S, 'IMO 2025 · 35/42', 260, 440, { size: 30, font: F.mono, col: INK.navy, knock: 8 }); }],
