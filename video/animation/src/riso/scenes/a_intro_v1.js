@@ -73,6 +73,11 @@
     [15.74, async (t, lt, dur) => {
       await plateOrClip('p04_podium', lt, dur, { cam0: { z: 1.05 }, cam1: { z: 1.0 } });
       tag(1130, 335, 190, 215, 'fei-fei_li', t - 16.1, { col: INK.yellow, size: 28 });
+      // the clip garbles her jersey number into "19": print a clean 15.3 over it, tracked through the crouch and the hop (frame px)
+      if (t > 15.95) { const [jx, jy, jr, js] = kf(t, [[15.95, [912, 473, -.5, 1]], [16.5, [912, 484, -.55, 1]], [17.5, [912, 478, -.5, 1]], [17.8, [933, 421, -.45, 1]],
+          [17.95, [960, 337, 0, .82]], [18.4, [954, 347, 0, .82]], [19.1, [954, 347, 0, .82]]], v => v);
+        I.save(); I.translate(jx, jy); I.rotate(jr); I.scale(js, js); I.fillStyle = INK.blue; roughRect(I, -68, -44, 136, 88, t, 'jz', 2); I.fill();
+        text(I, '15.3', 0, 3, { size: 62, font: F.hook, col: INK.navy, stroke: INK.paper, strokeW: 7, track: -2 }); I.restore(); }
       const L = 4, t15 = wt(L, 'Fifteen'), t26 = wt(L, 'Twenty'), sc = 17;
       if (t < 17.8) bbox(840, 415, 160, 135, 'jersey: 15.3% err', null, t - wt(L, 'point'), { col: INK.pink, size: 24, lw: 5 });   // until she hops up
       // the race chart fits the empty stage left of her (she and the trophy start at x ≈ 600)

@@ -4,9 +4,9 @@
 
 | Where | File | Why |
 |---|---|---|
-| **YouTube** | `final/happy-birthday-to-me-v4-master.mp4` (1.0 GB) | YouTube re-encodes everything, so give it the highest-quality source. The master isn't uncompressed; it's H.264 CRF 20 with 320k AAC. |
-| **Reddit native upload**, Discord (Nitro), email/Drive links | `final/happy-birthday-to-me-v4.mp4` (308 MB, 1080p, 12 Mbps) | Looks the same to the eye at a third of the size. |
-| Texting friends, WhatsApp, Discord (free), previews | `final/happy-birthday-to-me-v4-720p.mp4` (144 MB) | Small enough for most messengers. |
+| **YouTube** | `final/happy-birthday-to-me-v10-master.mp4` (1.08 GB) | YouTube re-encodes everything, so give it the highest-quality source. The master isn't uncompressed; it's H.264 CRF 20 with 320k AAC. |
+| **Reddit native upload**, Discord (Nitro), email/Drive links | `final/happy-birthday-to-me-v10.mp4` (323 MB, 1080p, 12 Mbps) | Looks the same to the eye at a third of the size. |
+| Texting friends, WhatsApp, Discord (free), previews | `final/happy-birthday-to-me-v10-720p.mp4` (151 MB) | Small enough for most messengers. |
 | **X / Twitter** | a teaser under 2:20 (to do) | Free accounts cap video at 2 min 20 s; the full cut is 3:31. |
 
 ## Promo images: `final/promo/`
@@ -40,7 +40,7 @@ Made on one RTX 3090 with a $0 budget, using open models, by Lino Valdovinos and
 0:12 2012: born on ImageNet
 0:31 Chorus: happy birthday to me
 0:43 Move 37 → Attention (2016–2020)
-1:09 The haters
+1:09 The haters (and the skeptics)
 1:22 Chorus: can't even drive
 1:35 ChatGPT → the Nobels
 2:00 Chorus: scale is all I need
@@ -50,7 +50,7 @@ Made on one RTX 3090 with a $0 budget, using open models, by Lino Valdovinos and
 3:04 Nobody labels me
 3:14 Credits
 
-Easter eggs: her jersey says 15.3, AlexNet's top-5 error. The song is 3:14 long. Tell me which ones you found.
+Easter eggs: her jersey says 15.3, AlexNet's top-5 error. The song is 3:14 long. Her snowboard runs at lr=3e-4. Tell me which ones you found.
 
 MUSIC: Suno (final song) · ACE-Step 1.5 · MiniMax Music 3 · YuE2 (exploration)
 PICTURES + MOTION: Qwen-Image 2.1 · LTX-2.3 · InfiniteTalk + Wan 2.1 · ComfyUI
