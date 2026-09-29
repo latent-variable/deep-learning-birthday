@@ -4,9 +4,9 @@
 
 | Where | File | Why |
 |---|---|---|
-| **YouTube** | `final/happy-birthday-to-me-v10-master.mp4` (1.08 GB) | YouTube re-encodes everything, so give it the highest-quality source. The master isn't uncompressed; it's H.264 CRF 20 with 320k AAC. |
-| **Reddit native upload**, Discord (Nitro), email/Drive links | `final/happy-birthday-to-me-v10.mp4` (323 MB, 1080p, 12 Mbps) | Looks the same to the eye at a third of the size. |
-| Texting friends, WhatsApp, Discord (free), previews | `final/happy-birthday-to-me-v10-720p.mp4` (151 MB) | Small enough for most messengers. |
+| **YouTube** | `final/happy-birthday-to-me-v11-master.mp4` (1.08 GB) | YouTube re-encodes everything, so give it the highest-quality source. The master isn't uncompressed; it's H.264 CRF 20 with 320k AAC. |
+| **Reddit native upload**, Discord (Nitro), email/Drive links | `final/happy-birthday-to-me-v11.mp4` (323 MB, 1080p, 12 Mbps) | Looks the same to the eye at a third of the size. |
+| Texting friends, WhatsApp, Discord (free), previews | `final/happy-birthday-to-me-v11-720p.mp4` (151 MB) | Small enough for most messengers. |
 | **X / Twitter** | a teaser under 2:20 (to do) | Free accounts cap video at 2 min 20 s; the full cut is 3:31. |
 
 ## Promo images: `final/promo/`
@@ -35,6 +35,7 @@ Meet Lexi (Alex·Net → Lexi): bratty, brilliant, labeling everything, and done
 14 years of AI in 3 minutes 14 seconds: ReLU, GANs, Move 37, Attention, ChatGPT, the Nobels, DeepSeek, and more.
 
 Made on one RTX 3090 with a $0 budget, using open models, by Lino Valdovinos and Claude Opus 5.5.
+Make your own (the whole pipeline, MIT): https://github.com/latent-variable/deep-learning-birthday
 
 0:00 Hello, world
 0:12 2012: born on ImageNet
@@ -68,7 +69,7 @@ For Alex, Ilya & Geoff, and everyone who labeled ImageNet.
 
 ## Reddit (Sept 30, around 8–10 am ET)
 
-- **Post type:** upload the video natively; native video gets far more plays than a link. Put the YouTube link in your first comment.
+- **Post type:** upload the video natively; native video gets far more plays than a link. Put the YouTube link and the repo (github.com/latent-variable/deep-learning-birthday) in your first comment.
 - **Before posting:** check each sub's self-promo and AI-content rules.
 - **Title ideas:**
   - r/singularity, r/accelerate: *AlexNet turns 14 today, so I made deep learning a birthday song (made with open models on one 3090)*
@@ -77,4 +78,8 @@ For Alex, Ilya & Geoff, and everyone who labeled ImageNet.
 
 ## X
 
-Post a 45–60 s teaser (the chorus-1 hook, or the "now I'm labeling you" ending), pin it, and link the YouTube premiere. Set the new profile picture a day or two before.
+With X Premium, post the full video natively (Premium lifts the 2:20 cap), pin it, and reply with the YouTube and repo links. Without Premium, post a 45–60 s teaser instead. Set the new profile picture a day or two before.
+
+## Repo
+
+Flip latent-variable/deep-learning-birthday to public on release day: `gh repo edit latent-variable/deep-learning-birthday --visibility public --accept-visibility-change-consequences`.

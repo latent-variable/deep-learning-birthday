@@ -1,73 +1,77 @@
+<p align="center"><img src="docs/banner.jpg" alt="Happy Birthday to Me: Lexi, the SuperVision team and the labs, printed in riso ink"></p>
+
 # Happy Birthday to Me (Self-Supervised)
 
-A music video for Deep Learning's 14th birthday.
+<img src="video/animation/assets/stk/pose_0.png" align="right" width="190" alt="Lexi, jumping">
 
-On **September 30, 2012**, the team called *SuperVision* (Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton) submitted AlexNet to ImageNet. It won with a **15.3%** top-5 error; the runner-up had 26.2%. This video is that birthday, sung by the kid who was born that night.
+A music video for deep learning's 14th birthday. On **September 30, 2012**, AlexNet was submitted to ImageNet and won with a **15.3%** top-5 error; the runner-up had 26.2%. **Lexi** (Alex·Net → Lexi) is that kid at 14: bratty, brilliant, labeling everything. In 3 minutes and 14 seconds she recaps fourteen years of AI, from two GTX 580s to the Nobels, until the last line turns the detection box on you.
 
-**Lexi** (from Alex·Net) is Deep Learning at 14: bratty, brilliant, and done asking permission. In 3 minutes and 14 seconds she recaps fourteen years:
-- 2012 to 2015: two GPUs and a ReLU kick, Atari, word2vec, GANs, DeepDream
-- 2016 to 2021: Move 37, Tay, AlphaZero, "Attention Is All You Need", GPT-2, OpenAI Five, AlphaFold, the avocado armchair
-- 2022 to 2024: ChatGPT, the bar exam, the pause letter, the Nobels
-- 2025 to 2026: DeepSeek, IMO gold, Stargate, Moltbook, Hugging Face, Navier–Stokes
+▶ **Watch:** premieres on YouTube on Sept 30, 2026.
 
-Along the way she labels everything with object-detection boxes, until the last line: *"Nobody labels me / Now I'm labeling you."*
+Made on **one RTX 3090 with a $0 budget**, using open models, by Lino Valdovinos and Claude Opus 5.5 (in Claude Code).
 
-It's made entirely with local, open tools on **one RTX 3090, with a $0 budget**, directed by Lino Valdovinos and built together with Claude Opus 5.5.
+<p align="center"><img src="docs/stills.jpg" alt="Nine frames from the video"></p>
 
-## The look: "RISO LIVE"
+## How it's made
 
-Every frame is printed through a WebGL **risograph shader**:
-- The image layer is separated into four inks (fluorescent pink, blue, yellow and navy) and halftoned on rotated screens, with misregistration that kicks on every downbeat.
-- The type and HUD print as solid spot ink.
-- A `● LIVE yyyy.mm.dd` stamp tracks the real date of every event.
-- A karaoke lyric bar highlights each word as it's sung.
-- Detection boxes label the people, papers, companies and objects.
-
-## Pipeline
+<img src="video/animation/assets/stk/head2_4.png" align="right" width="150" alt="Lexi in sunglasses">
 
 | Stage | Tools | Where |
 |---|---|---|
-| Song | Suno (final). Style and lyric exploration with ACE-Step 1.5 XL SFT + 4B LM, MiniMax Music 3 and YuE2; legibility scored with faster-whisper + jiwer | `music/`, `scripts/` |
-| Timing | word-level lyric alignment (faster-whisper) and a librosa beat grid | `scripts/align_lyrics.py`, `video/timing/` |
-| Character & plates | Qwen-Image 2.1 (text-to-image, multi-reference edit, background removal) | `video/assets/char/`, `video/plates/` |
-| Real people | Wikimedia Commons photos redrawn in the riso style; two-step scene edits (stand-in → real person) | `video/assets/people/`, `video/plates/tribute_plates.py` |
-| Motion | LTX-2.3 image-to-video (22B Q4 GGUF, 2-stage 1080p), trimmed per clip | `video/plates/run_ltx.sh`, `video/animation/src/riso/cuts.js` |
-| Lip sync | InfiniteTalk on Wan 2.1 I2V 14B, driven by MelBand RoFormer vocal stems | `video/plates/run_lipsync.sh` |
-| Compositor | p5.js-era kit (ClaudeAnimationBase) rebuilt as a two-layer canvas + WebGL riso pass, rendered by headless Chrome | `video/animation/` |
-| Review | contact sheets, frame strips, grid overlays, and critic subagents on every pass | `render.mjs --sheet/--strip/--grid` |
+| Song | Suno (final). Style exploration with ACE-Step 1.5, MiniMax Music 3, YuE2 | `music/` |
+| Timing | word-level lyric alignment (faster-whisper) + a librosa beat grid | `scripts/align_lyrics.py`, `video/timing/` |
+| Pictures | Qwen-Image 2.1: one riso plate per lyric beat, sticker sheets, background removal, real-person portraits from photos | `video/plates/`, `video/assets/` |
+| Motion | LTX-2.3 image-to-video, trimmed and retimed per clip | `video/plates/run_ltx.sh`, `video/animation/src/riso/cuts.js` |
+| Lip sync | InfiniteTalk on Wan 2.1, driven by vocal stems | `video/plates/run_lipsync.sh` |
+| Compositor | **RISO LIVE**: two canvas layers plus a WebGL risograph shader (four inks, halftone screens, misregistration on the downbeat), rendered frame by frame in headless Chrome | `video/animation/` |
 
-The full write-up is in [`video/PIPELINE.md`](video/PIPELINE.md). The creative brief is [`video/BRIEF.md`](video/BRIEF.md) and the shot plan is [`video/STORYBOARD.md`](video/STORYBOARD.md).
+Every frame is a pure function of time, so any moment can be re-rendered and reviewed on its own. The full write-up is in [`video/PIPELINE.md`](video/PIPELINE.md); the shot plan is in [`video/STORYBOARD.md`](video/STORYBOARD.md).
 
-## Render it
+## Make your own
 
-```bash
-cd video/animation && npm install
-# review a moment:  node render.mjs --sheet=12.5,31.8 --cols=2 --w=960 --grid --out=out/check/a.jpg
-FRESH=1 bash video/make_final.sh happy-birthday-to-me     # frames → master + 1080p share + 720p
-```
+<img src="video/animation/assets/stk/pose_6.png" align="right" width="150" alt="Lexi singing">
 
-`video/gpu_queue.sh` runs GPU jobs strictly one at a time. The workstation once hard-crashed with bugcheck 0x119 (a GPU scheduler error) when heavy Qwen edits overlapped. Since then ComfyUI runs with `--reserve-vram 3 --disable-smart-memory`, and peak VRAM dropped from 22.9 GB to 16.1 GB.
+**You need:** a 24 GB GPU (built on an RTX 3090, Windows 11), roughly 80 GB for model weights, Node, Python, FFmpeg, Chrome, ComfyUI, and [Claude Code](https://claude.com/claude-code).
 
-## Assets not in the repo
+**The easy way:** clone the repo, open Claude Code in it, and say:
 
-These are kept out for size or licensing and are regenerable with the scripts:
-- the ComfyUI and ACE-Step installs, model weights and caches
-- the LTX and InfiniteTalk clips and the extracted frames
-- the reference photos
-- the final videos
+> Read README.md and video/PIPELINE.md. Set up this pipeline on my machine, then help me make a music video for my song.
 
-The 54 final illustration plates (`video/plates/img/`), stickers, logos and portraits are included.
+It sets up ComfyUI and the models, and walks through the steps below with you. That's how this video was made: one long conversation, with critic subagents reviewing every pass.
+
+**The steps:**
+1. **Song and timing.** Put your track in `video/animation/assets/`, then align the lyrics and beats (`scripts/align_lyrics.py`, into `video/timing/`); that data becomes `src/song.js`.
+2. **Look and character.** Design a character sheet with Qwen-Image (`video/workflows/qwen21_*`) and cut out sticker poses (`video/assets/split_sheet.py`).
+3. **Plates.** Write one prompt per lyric beat in `video/plates/plates.py` and generate them with `run_plates.sh`. Targeted fixes go through `fix_plates.py`.
+4. **Motion.** Run `run_ltx.sh` per plate and `extract_clips.sh`, then trim the wonky parts in `cuts.js`.
+5. **Compose.** Write shots in `video/animation/src/riso/scenes/*.js`. Review any moment with `node render.mjs --sheet=12.5,31.8 --grid`.
+6. **Render.** Run `FRESH=1 bash video/make_final.sh my-video` to get the master, a 1080p share copy and a 720p copy.
+
+Run GPU jobs one at a time (`video/gpu_queue.sh`). Overlapping heavy jobs crashed this machine once.
+
+**Model weights** (download into ComfyUI's `models/`):
+- Qwen-Image 2.1 int8 + Qwen3-VL 8B text encoder
+- LTX-2.3 22B Q4_K_M GGUF, its distilled LoRA and x2 upscaler, plus a Gemma 3 12B text encoder
+- Wan 2.1 I2V 14B fp8 + InfiniteTalk + lightx2v LoRA
+
+Exact filenames are in `video/workflows/*.json`.
 
 ## Credits
 
-- **Direction:** Lino Valdovinos
-- **Co-creation (lyrics, storyboard, code, animation engine, edit):** Claude Opus 5.5
-- **Music:** Suno · ACE-Step · MiniMax Music 3 · YuE2 · faster-whisper · jiwer · MelBand RoFormer
-- **Pictures & motion:** Qwen-Image 2.1 (Qwen / Alibaba) · LTX-2.3 (Lightricks) · InfiniteTalk (MeiGen) · Wan 2.1 (Wan-AI) · ComfyUI · ComfyUI-GGUF
-- **Print shop:** p5.js · p5.brush · Puppeteer · Chrome · FFmpeg · librosa. The animation kit and the inspiration come from John Heibel's [ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) (MIT) and [*I'm Upping My P(doom)*](https://github.com/JohnHeibel/PDoomVideo).
-- **Fonts:** Bricolage Grotesque, Instrument Serif, Silkscreen, Space Mono (SIL OFL)
-- **Portrait references (Wikimedia Commons):** see [`video/assets/people/refs_attribution.json`](video/assets/people/refs_attribution.json). Each photo is credited to its author under CC BY / CC BY-SA / public domain. Ilya Sutskever's reference photo was supplied by the director.
+<img src="video/animation/assets/stk/lexi_4.png" align="right" width="130" alt="Lexi laughing">
 
-The logos and names belong to their owners. This is a tribute, not an endorsement.
+- **Direction:** Lino Valdovinos ([@latent-variable](https://github.com/latent-variable)).
+- **Co-creation (lyrics, storyboard, code, animation engine, edit):** Claude Opus 5.5.
+- **Models and tools:** Suno · ACE-Step · MiniMax Music 3 · YuE2 · Qwen-Image 2.1 · LTX-2.3 · InfiniteTalk · Wan 2.1 · ComfyUI · faster-whisper · librosa · p5.js · Puppeteer · FFmpeg.
+- **Animation kit and inspiration:** John Heibel's [ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) and [*I'm Upping My P(doom)*](https://github.com/JohnHeibel/PDoomVideo).
+- **Fonts (SIL OFL):** Bricolage Grotesque · Instrument Serif · Silkscreen · Space Mono.
+- **Portraits:** redrawn from Wikimedia Commons photos, credited in [`refs_attribution.json`](video/assets/people/refs_attribution.json).
 
 *For Alex, Ilya & Geoff, and everyone who labeled ImageNet.*
+
+## License
+
+- **Code and pipeline:** [MIT](LICENSE).
+- **Illustrations, stickers and portraits:** [CC BY-SA 4.0](LICENSE-ART.md).
+- **The song is not included.** It was made on Suno's free tier, so Suno owns it and allows personal, non-commercial use only. Bring your own track.
+- **Real people and company logos** appear as a fan tribute; names and logos belong to their owners, and nothing here is an endorsement.

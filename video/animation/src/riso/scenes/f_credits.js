@@ -79,6 +79,7 @@ const SONG_END = 194.72;
       text(S, '— and everyone who labeled ImageNet', W / 2, 520, { size: 64, font: F.serif, style: 'italic', col: INK.yellow, alpha: seg(a, .6, 1.0) });
       text(S, '2012.09.30 → 2026.09.30', W / 2, 700, { size: 48, font: F.mono, col: INK.pink, alpha: seg(a, 1.0, 1.3) });
       bbox(W / 2 - 520, 300, 1040, 280, 'thank you', 1.0, a - 1.3, { col: INK.pink, size: 34, lw: 8 });
+      text(S, 'make your own → github.com/latent-variable/deep-learning-birthday', W / 2, 860, { size: 32, font: F.mono, col: INK.paper, alpha: seg(a, 1.5, 1.8) });
       if (t > DUR - .3) { POST.flash = seg(t, DUR - .3, DUR); POST.flashCol = INK.navy; }
     }, { tin: ['iris', .5] }],
   ];
