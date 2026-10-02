@@ -6,11 +6,11 @@
 
 A music video for deep learning's 14th birthday. On **September 30, 2012**, AlexNet was submitted to ImageNet and won with a **15.3%** top-5 error; the runner-up had 26.2%. **Lexi** (Alex·Net → Lexi) is that kid at 14: bratty, brilliant, labeling everything. In 3 minutes and 14 seconds she recaps fourteen years of AI, from two GTX 580s to the Nobels, until the last line turns the detection box on you.
 
-▶ **Watch:** premieres on YouTube on Sept 30, 2026.
+▶ **[Watch it on YouTube](https://www.youtube.com/watch?v=OFSIvZGWNlY)**
 
 Made on **one RTX 3090 with a $0 budget**, using open models, by Lino Valdovinos and Claude Opus 5.5 (in Claude Code).
 
-<p align="center"><img src="docs/stills.jpg" alt="Nine frames from the video"></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=OFSIvZGWNlY"><img src="docs/stills.jpg" alt="Nine frames from the video (click to watch on YouTube)"></a></p>
 
 ## How it's made
 
